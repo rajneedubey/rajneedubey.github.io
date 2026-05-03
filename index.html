@@ -3,75 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page</title>
+    <title>My App</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            text-align: center;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: #555;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
+            background: #4CAF50;
             color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: yellow;
+            padding: 40px 20px;
         }
         .container {
             padding: 20px;
         }
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .features {
+            margin-top: 30px;
+        }
+        .features div {
+            margin: 10px 0;
+            font-size: 18px;
+        }
         footer {
+            margin-top: 40px;
+            padding: 15px;
             background: #333;
             color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My First Website</h1>
-    <p>Welcome to my sample HTML page</p>
+    <h1>My App Name</h1>
+    <p>Your app tagline goes here</p>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</nav>
-
 <div class="container">
-    <h2>About This Page</h2>
-    <p>This is a simple HTML page layout with header, navigation bar, content section, and footer.</p>
+    <h2>About the App</h2>
+    <p>This app helps users to [describe what your app does]. It is fast, simple, and easy to use.</p>
 
-    <h3>Features:</h3>
-    <ul>
-        <li>Responsive design</li>
-        <li>Simple navigation</li>
-        <li>Clean layout</li>
-    </ul>
+    <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="btn">
+        Download on Play Store
+    </a>
+
+    <div class="features">
+        <h2>Features</h2>
+        <div>✔ Easy to use</div>
+        <div>✔ Fast performance</div>
+        <div>✔ User-friendly interface</div>
+        <div>✔ Secure and reliable</div>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 My Website | All Rights Reserved</p>
+    <p>© 2026 My App | All Rights Reserved</p>
 </footer>
 
 </body>
