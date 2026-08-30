@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Cash Manager</title>
+    <style>
+        :root {
+            --primary-color: #1976D2;
+            --secondary-color: #0D47A1;
+            --text-color: #333333;
+            --bg-color: #F4F6F9;
+            --card-bg: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 0.75rem;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+            margin-top: 1.8rem;
+            font-size: 1.4rem;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p, ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background-color: #E3F2FD;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            border-radius: 0 6px 6px 0;
+            margin: 1.5rem 0;
+        }
+
+        .contact-box {
+            background-color: #F8F9FA;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #666666;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cash Manager</h1>
+        <p>Privacy Policy</p>
+    </header>
+
+    <nav>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <p><strong>Effective Date:</strong> August 30, 2026</p>
+            <p><strong>Last Updated:</strong> August 30, 2026</p>
+
+            <div class="highlight-box">
+                <strong>Summary:</strong> Cash Manager respects your privacy. We do not collect, store, or share any personal information. All your cash record data is stored locally on your device only.
+            </div>
+
+            <h2>1. Overview</h2>
+            <p>This Privacy Policy explains how <strong>Cash Manager</strong> ("we", "our", or "us") handles information when you use our mobile application (the "App"). We are committed to protecting your privacy and ensuring a secure user experience.</p>
+
+            <h2>2. Information Collection and Storage</h2>
+            <p><strong>Cash Manager is a local-only application.</strong> We do not collect, transmit, or sell any personal data or financial information to external servers or third parties.</p>
+            <ul>
+                <li><strong>Local Data Storage:</strong> All cash records, morning and evening tally counts, denomination inputs, initial balance preferences, and language settings created within the App are stored strictly on your device using local storage mechanisms (such as <code>SharedPreferences</code>).</li>
+                <li><strong>No Account Required:</strong> You are not required to create an account, register, or provide personal details (such as name, email address, phone number, or banking details) to use the App.</li>
+            </ul>
+
+            <h2>3. Device Permissions</h2>
+            <p>The App operates with minimal permissions. It does not access your location, contacts, media, camera, or device identifier unless explicitly required by operating system features for local storage management.</p>
+
+            <h2>4. Internet &amp; Network Access</h2>
+            <p>Cash Manager works completely offline. The App does not send any data over the Internet or connect to remote analytics servers, advertisement networks, or tracking services.</p>
+
+            <h2>5. Third-Party Services</h2>
+            <p>The App does not integrate with any third-party analytics tools, ad providers, or cloud services that track user behavior or harvest user data.</p>
+
+            <h2>6. Data Security</h2>
+            <p>Because all data remains on your local device, the security of your cash management records depends on your device's security settings (e.g., PIN, password, fingerprint, or encryption). We recommend keeping your mobile device secured.</p>
+
+            <h2>7. Data Retention and Deletion</h2>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li>You can delete individual history records directly inside the App.</li>
+                <li>Clearing the App data or uninstalling the App from your device will permanently remove all stored cash records.</li>
+            </ul>
+
+            <h2>8. Children's Privacy</h2>
+            <p>Cash Manager is intended for general professional and personal use, primarily designed for bank cashiers and cash handling professionals. We do not knowingly collect any information from children under the age of 13.</p>
+
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any updates will be reflected by updating the "Last Updated" date at the top of this policy. You are advised to review this page periodically for any changes.</p>
+
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to contact us:</p>
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:support@cashmanager.com">rajnee.dubey1987@gmail.com</a></p>
+                <p><strong>Application:</strong> Cash Manager (com.cashmanager.app)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Cash Manager. All rights reserved. | <a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
+    </footer>
+
+</body>
+</html>
