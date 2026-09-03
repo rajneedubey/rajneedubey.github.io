@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samriva Labs — Smart & Powerful Android Apps</title>
-    <meta name="description" content="Discover premium, high-performance Android applications built by Samriva Labs. Smart utilities, media players, cash managers, and file explorers.">
-    <meta name="theme-color" content="#0a0f1d">
+    <title>Samriva Labs — High Performance & Smart Android Apps</title>
+    <meta name="description" content="Discover premium Android applications built by Samriva Labs. Samriva Video & Audio Player, Cash Manager, and Ultra Files Manager. Powerful, fast, and 100% private.">
+    <meta name="theme-color" content="#070a13">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,11 @@
     <style>
         :root {
             --bg-dark: #070a13;
-            --bg-card: rgba(18, 24, 40, 0.75);
-            --bg-card-hover: rgba(28, 37, 62, 0.85);
+            --bg-surface: #0f1526;
+            --bg-card: rgba(16, 22, 38, 0.75);
+            --bg-card-hover: rgba(26, 36, 62, 0.85);
             --border-color: rgba(255, 255, 255, 0.08);
-            --border-glow: rgba(99, 102, 241, 0.35);
+            --border-glow: rgba(99, 102, 241, 0.4);
             
             --primary: #6366f1;
             --primary-light: #818cf8;
@@ -26,21 +27,27 @@
             --accent-cyan: #06b6d4;
             --accent-emerald: #10b981;
             --accent-amber: #f59e0b;
-            
+            --accent-blue: #3b82f6;
+
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --text-dim: #64748b;
             
-            --radius-lg: 20px;
-            --radius-md: 14px;
+            --radius-xl: 24px;
+            --radius-lg: 18px;
+            --radius-md: 12px;
             --radius-sm: 8px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -52,35 +59,47 @@
             position: relative;
         }
 
-        /* Ambient Glow Backgrounds */
+        /* Background Ambient Glows */
         .ambient-glow-1 {
             position: absolute;
-            top: -150px;
+            top: -180px;
             left: 50%;
             transform: translateX(-50%);
-            width: 700px;
-            height: 550px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(168, 85, 247, 0.12) 40%, transparent 70%);
-            filter: blur(80px);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.22) 0%, rgba(168, 85, 247, 0.14) 40%, transparent 70%);
+            filter: blur(100px);
             z-index: 0;
             pointer-events: none;
         }
 
         .ambient-glow-2 {
             position: absolute;
-            top: 40%;
-            right: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
-            filter: blur(90px);
+            top: 35%;
+            right: -150px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+            filter: blur(110px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .ambient-glow-3 {
+            position: absolute;
+            bottom: 10%;
+            left: -150px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.12) 0%, transparent 70%);
+            filter: blur(110px);
             z-index: 0;
             pointer-events: none;
         }
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: 1240px;
             margin: 0 auto;
             padding: 0 24px;
             position: relative;
@@ -91,9 +110,9 @@
         header {
             position: sticky;
             top: 0;
-            background: rgba(7, 10, 19, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(7, 10, 19, 0.82);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border-color);
             z-index: 100;
         }
@@ -102,35 +121,36 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 75px;
+            height: 80px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             text-decoration: none;
             color: var(--text-main);
         }
 
         .logo-icon {
-            width: 42px;
-            height: 42px;
+            width: 44px;
+            height: 44px;
             background: var(--primary-gradient);
-            border-radius: 12px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 6px 24px rgba(99, 102, 241, 0.45);
             color: white;
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 800;
             font-size: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .logo-text {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 21px;
+            font-size: 22px;
             font-weight: 800;
             letter-spacing: -0.5px;
             background: linear-gradient(to right, #ffffff, #cbd5e1);
@@ -141,7 +161,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 32px;
             list-style: none;
         }
 
@@ -160,7 +180,7 @@
         .nav-btn {
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid var(--border-color);
-            padding: 8px 18px;
+            padding: 10px 22px;
             border-radius: 100px;
             color: var(--text-main) !important;
             font-weight: 600 !important;
@@ -172,29 +192,31 @@
         }
 
         .nav-btn:hover {
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-1px);
+            background: rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
         }
 
         /* Hero Section */
         .hero {
-            padding: 90px 0 60px;
+            padding: 100px 0 70px;
             text-align: center;
         }
 
         .badge-pill {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 6px 16px;
-            background: rgba(99, 102, 241, 0.1);
-            border: 1px solid rgba(99, 102, 241, 0.3);
+            gap: 10px;
+            padding: 8px 20px;
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.35);
             border-radius: 100px;
-            font-size: 13px;
+            font-size: 13.5px;
             font-weight: 600;
             color: var(--primary-light);
-            margin-bottom: 24px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(10px);
         }
 
         .badge-dot {
@@ -202,45 +224,53 @@
             height: 8px;
             background: #22c55e;
             border-radius: 50%;
-            box-shadow: 0 0 10px #22c55e;
+            box-shadow: 0 0 12px #22c55e;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
             0% { transform: scale(0.95); opacity: 0.8; }
-            50% { transform: scale(1.2); opacity: 1; }
+            50% { transform: scale(1.25); opacity: 1; }
             100% { transform: scale(0.95); opacity: 0.8; }
         }
 
         .hero h1 {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 54px;
-            line-height: 1.15;
+            font-size: 58px;
+            line-height: 1.12;
             font-weight: 800;
-            letter-spacing: -1.5px;
-            max-width: 850px;
-            margin: 0 auto 22px;
+            letter-spacing: -1.8px;
+            max-width: 900px;
+            margin: 0 auto 24px;
         }
 
         .gradient-text {
-            background: var(--primary-gradient);
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 35%, #06b6d4 70%, #ec4899 100%);
+            background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            animation: textShimmer 6s linear infinite;
+        }
+
+        @keyframes textShimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
         }
 
         .hero-sub {
-            font-size: 19px;
+            font-size: 20px;
             color: var(--text-muted);
-            max-width: 640px;
-            margin: 0 auto 36px;
+            max-width: 680px;
+            margin: 0 auto 40px;
             font-weight: 400;
+            line-height: 1.6;
         }
 
         .hero-actions {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 16px;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
@@ -248,20 +278,20 @@
             background: var(--primary-gradient);
             color: white;
             text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 12px;
-            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 14px;
+            font-weight: 700;
             font-size: 16px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+            gap: 12px;
+            box-shadow: 0 10px 35px rgba(99, 102, 241, 0.45);
             transition: var(--transition);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(99, 102, 241, 0.55);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 45px rgba(99, 102, 241, 0.6);
         }
 
         .btn-secondary {
@@ -269,61 +299,116 @@
             border: 1px solid var(--border-color);
             color: var(--text-main);
             text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 12px;
+            padding: 16px 32px;
+            border-radius: 14px;
             font-weight: 600;
             font-size: 16px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            backdrop-filter: blur(10px);
             transition: var(--transition);
         }
 
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
         }
 
-        /* Stats Strip */
+        /* Stats Bar */
         .stats-bar {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin: 60px auto 0;
-            padding: 24px 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 70px auto 0;
+            padding: 28px 48px;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            max-width: 820px;
-            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            max-width: 900px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
         }
 
         .stat-item {
             text-align: center;
+            position: relative;
+        }
+
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: var(--border-color);
         }
 
         .stat-number {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 800;
             color: var(--text-main);
             letter-spacing: -0.5px;
+            background: linear-gradient(to bottom, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .stat-label {
             font-size: 13px;
             color: var(--text-muted);
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 2px;
+            letter-spacing: 0.8px;
+            margin-top: 4px;
+        }
+
+        /* Filter Tabs */
+        .filter-section {
+            margin: 90px 0 40px;
+            text-align: center;
+        }
+
+        .filter-tabs {
+            display: inline-flex;
+            gap: 10px;
+            padding: 6px;
+            background: rgba(18, 24, 40, 0.9);
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            backdrop-filter: blur(12px);
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            border-radius: 100px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .filter-btn:hover:not(.active) {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
         }
 
         /* Section Headings */
         .section-header {
             text-align: center;
-            margin: 100px 0 50px;
+            margin: 20px 0 50px;
         }
 
         .section-tag {
@@ -338,38 +423,38 @@
 
         .section-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 38px;
+            font-size: 42px;
             font-weight: 800;
-            letter-spacing: -1px;
+            letter-spacing: -1.2px;
             margin-bottom: 16px;
         }
 
         .section-desc {
-            font-size: 17px;
+            font-size: 18px;
             color: var(--text-muted);
-            max-width: 580px;
+            max-width: 600px;
             margin: 0 auto;
         }
 
         /* Apps Grid */
         .apps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
         }
 
         .app-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 32px;
+            border-radius: var(--radius-xl);
+            padding: 36px;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             transition: var(--transition);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
             overflow: hidden;
         }
 
@@ -379,17 +464,17 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
+            height: 4px;
             background: var(--primary-gradient);
             opacity: 0;
             transition: var(--transition);
         }
 
         .app-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-8px);
             background: var(--bg-card-hover);
             border-color: var(--border-glow);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(99, 102, 241, 0.15);
         }
 
         .app-card:hover::before {
@@ -398,118 +483,127 @@
 
         .app-top {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
-        /* Custom App Icons */
-        .app-icon {
-            width: 72px;
-            height: 72px;
-            border-radius: 18px;
+        /* Rendered Vector App Icons */
+        .app-icon-frame {
+            width: 84px;
+            height: 84px;
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
             position: relative;
             overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: var(--transition);
         }
 
-        .icon-cash {
-            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+        .app-card:hover .app-icon-frame {
+            transform: scale(1.05) rotate(2deg);
         }
 
-        .icon-player {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #d946ef 100%);
-        }
-
-        .icon-files {
-            background: linear-gradient(135deg, #0284c7 0%, #06b6d4 50%, #38bdf8 100%);
-        }
-
-        .icon-soon {
-            background: linear-gradient(135deg, #334155 0%, #475569 100%);
+        .icon-svg-wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .app-title-wrap h3 {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 21px;
-            font-weight: 700;
-            letter-spacing: -0.3px;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
             margin-bottom: 6px;
             color: var(--text-main);
+            line-height: 1.25;
         }
 
         .app-category {
-            font-size: 13px;
+            font-size: 13.5px;
             color: var(--accent-cyan);
-            font-weight: 600;
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            background: rgba(6, 182, 212, 0.1);
+            padding: 4px 12px;
+            border-radius: 100px;
+            border: 1px solid rgba(6, 182, 212, 0.2);
         }
 
         .app-desc {
             color: var(--text-muted);
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 24px;
+            font-size: 15.5px;
+            line-height: 1.65;
+            margin-bottom: 26px;
+            font-weight: 400;
         }
 
         .app-features-list {
             list-style: none;
-            margin-bottom: 28px;
+            margin-bottom: 32px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         .app-features-list li {
-            font-size: 14px;
+            font-size: 14.5px;
             color: #cbd5e1;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.5;
         }
 
         .check-icon {
-            width: 18px;
-            height: 18px;
-            background: rgba(16, 185, 129, 0.15);
+            width: 20px;
+            height: 20px;
+            background: rgba(16, 185, 129, 0.18);
             color: #10b981;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 800;
             flex-shrink: 0;
+            margin-top: 2px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
         }
 
         /* Play Store Button */
         .btn-playstore {
-            background: #1e293b;
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             color: white;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 12px;
+            padding: 14px 22px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 15px;
             transition: var(--transition);
             width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .btn-playstore:hover {
-            background: #283548;
-            border-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            background: var(--primary-gradient);
+            border-color: transparent;
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+            transform: translateY(-2px);
         }
 
         .btn-playstore svg {
@@ -517,100 +611,143 @@
             height: 22px;
         }
 
-        /* Coming Soon Card */
+        /* Upcoming / In Development Card */
         .card-upcoming {
-            border: 2px dashed rgba(255, 255, 255, 0.12);
-            background: rgba(15, 23, 42, 0.4);
+            border: 2px dashed rgba(255, 255, 255, 0.15);
+            background: rgba(15, 23, 42, 0.45);
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 48px 32px;
+            padding: 50px 32px;
         }
 
         .upcoming-badge {
-            padding: 6px 14px;
-            background: rgba(245, 158, 11, 0.12);
+            padding: 6px 16px;
+            background: rgba(245, 158, 11, 0.15);
             color: #fbbf24;
             border-radius: 100px;
             font-size: 13px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             display: inline-block;
+            border: 1px solid rgba(245, 158, 11, 0.3);
         }
 
         /* Features Section */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 24px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 28px;
+            margin-top: 30px;
         }
 
         .feature-box {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            padding: 28px;
-            border-radius: var(--radius-md);
+            padding: 32px;
+            border-radius: var(--radius-lg);
             transition: var(--transition);
+            backdrop-filter: blur(12px);
         }
 
         .feature-box:hover {
             border-color: var(--border-glow);
-            transform: translateY(-4px);
+            transform: translateY(-5px);
+            background: var(--bg-card-hover);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         .feature-icon-wrap {
-            width: 48px;
-            height: 48px;
-            background: rgba(99, 102, 241, 0.12);
-            border-radius: 12px;
+            width: 52px;
+            height: 52px;
+            background: rgba(99, 102, 241, 0.15);
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--primary-light);
-            margin-bottom: 18px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
         }
 
         .feature-box h4 {
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         .feature-box p {
-            font-size: 14px;
+            font-size: 14.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            border-color: var(--border-glow);
+        }
+
+        .faq-item h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .faq-item p {
+            font-size: 14.5px;
             color: var(--text-muted);
             line-height: 1.6;
         }
 
         /* Footer */
         footer {
-            margin-top: 120px;
-            background: #04060c;
+            margin-top: 130px;
+            background: #03050a;
             border-top: 1px solid var(--border-color);
-            padding: 60px 0 30px;
+            padding: 70px 0 35px;
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
-            margin-bottom: 40px;
+            gap: 60px;
+            margin-bottom: 50px;
         }
 
         .footer-about p {
             color: var(--text-muted);
             font-size: 15px;
-            max-width: 380px;
-            margin-top: 14px;
+            max-width: 400px;
+            margin-top: 16px;
+            line-height: 1.6;
         }
 
         .footer-col h5 {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 700;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             color: var(--text-main);
         }
 
@@ -618,14 +755,15 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
 
         .footer-col a {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 14px;
+            font-size: 14.5px;
             transition: var(--transition);
+            cursor: pointer;
         }
 
         .footer-col a:hover {
@@ -636,22 +774,223 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 30px;
             color: var(--text-dim);
             font-size: 14px;
             flex-wrap: wrap;
             gap: 16px;
         }
 
+        /* Scroll To Top Floating Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px) scale(1.08);
+        }
+
+        /* Embedded Glassmorphic Legal Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(4, 7, 18, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--radius-xl);
+            width: 100%;
+            max-width: 900px;
+            max-height: 88vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), 0 0 50px rgba(99, 102, 241, 0.25);
+            overflow: hidden;
+            transform: scale(0.95) translateY(20px);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .modal-overlay.active .modal-card {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            padding: 24px 32px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(18, 24, 40, 0.7);
+        }
+
+        .modal-tabs {
+            display: flex;
+            gap: 12px;
+        }
+
+        .modal-tab-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 10px 22px;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .modal-tab-btn.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 18px rgba(99, 102, 241, 0.4);
+        }
+
+        .modal-close-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            transition: var(--transition);
+        }
+
+        .modal-close-btn:hover {
+            background: rgba(239, 68, 68, 0.25);
+            color: #ef4444;
+            border-color: rgba(239, 68, 68, 0.5);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 36px;
+            overflow-y: auto;
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .modal-body::-webkit-scrollbar {
+            width: 8px;
+        }
+        .modal-body::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+        }
+
+        .modal-body h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 28px 0 12px;
+        }
+
+        .modal-body h2:first-child {
+            margin-top: 0;
+        }
+
+        .modal-body p {
+            margin-bottom: 16px;
+        }
+
+        .modal-body ul {
+            margin: 0 0 20px 20px;
+        }
+
+        .modal-body ul li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .modal-highlight {
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            padding: 18px 22px;
+            border-radius: var(--radius-md);
+            color: var(--text-main);
+            margin-bottom: 24px;
+        }
+
+        .contact-email {
+            color: var(--primary-light);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 46px; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 24px; }
+            .stat-item:nth-child(2)::after { display: none; }
+            .faq-grid { grid-template-columns: 1fr; }
+        }
+
         @media (max-width: 768px) {
-            .hero h1 { font-size: 38px; }
-            .hero-sub { font-size: 16px; }
-            .stats-bar { flex-direction: column; gap: 24px; padding: 24px; }
+            .hero h1 { font-size: 36px; letter-spacing: -1px; }
+            .hero-sub { font-size: 17px; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 20px; }
             .nav-links { display: none; }
-            .footer-grid { grid-template-columns: 1fr; gap: 35px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 40px; }
             .apps-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 32px; }
+            .filter-tabs { flex-wrap: wrap; border-radius: 16px; }
+            .filter-btn { padding: 8px 16px; font-size: 13px; }
+            .modal-header { flex-direction: column; gap: 16px; align-items: flex-start; }
+            .modal-body { padding: 24px; }
         }
     </style>
 </head>
@@ -660,6 +999,7 @@
     <!-- Ambient background glows -->
     <div class="ambient-glow-1"></div>
     <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
 
     <!-- Navigation Bar -->
     <header>
@@ -671,9 +1011,10 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#apps">Our Apps</a></li>
-                    <li><a href="#features">Why Us</a></li>
+                    <li><a href="#features">Why Choose Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="mailto:support@samrivalabs.com" class="nav-btn">
+                    <li><a href="mailto:rajnee.dubey1987@gmail.com" class="nav-btn">
                         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
@@ -689,19 +1030,19 @@
         <div class="container">
             <div class="badge-pill">
                 <span class="badge-dot"></span>
-                Official Developer Studio
+                Official Android Developer Studio
             </div>
-            <h1>Smart, Powerful &amp; Elegant <br><span class="gradient-text">Android Experiences</span></h1>
-            <p class="hero-sub">At <strong>Samriva Labs</strong>, we engineer blazing-fast utility, media, and productivity apps designed for simplicity, privacy, and seamless daily performance.</p>
+            <h1>Smart, Ultra-Fast &amp; Elegant <br><span class="gradient-text">Android Experience</span></h1>
+            <p class="hero-sub">At <strong>Samriva Labs</strong>, we engineer blazing-fast utility, media, cash management, and file explorer applications designed for zero bloatware, offline security, and seamless daily productivity.</p>
             
             <div class="hero-actions">
                 <a href="#apps" class="btn-primary">
                     <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                     </svg>
-                    Explore Our Apps
+                    Explore Apps
                 </a>
-                <a href="https://play.google.com/store/apps/developer?id=Samriva+Labs" target="_blank" rel="noopener" class="btn-secondary">
+                <a href="https://play.google.com/store/apps/developer?id=Abneesh+Kumar+Dubey" target="_blank" rel="noopener" class="btn-secondary">
                     <span>Google Play Store</span>
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -713,45 +1054,69 @@
             <div class="stats-bar">
                 <div class="stat-item">
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">Privacy First</div>
+                    <div class="stat-label">Privacy &amp; Offline</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">4K Ultra HD</div>
                     <div class="stat-label">Playback Engine</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">Lightweight</div>
-                    <div class="stat-label">Zero Bloatware</div>
+                    <div class="stat-number">120 Hz</div>
+                    <div class="stat-label">Smooth Rendering</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Active Support</div>
+                    <div class="stat-number">Zero</div>
+                    <div class="stat-label">Data Harvesting</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Apps Showcase Section -->
+    <!-- Apps Filter Section -->
     <section id="apps" class="container">
         <div class="section-header">
-            <span class="section-tag">Portfolio</span>
+            <span class="section-tag">Official Apps</span>
             <h2 class="section-title">Our Featured Applications</h2>
-            <p class="section-desc">Handcrafted mobile applications optimized for speed, reliability, and modern Android devices.</p>
+            <p class="section-desc">Engineered with Kotlin, Material 3, and high-performance native engines for modern Android devices.</p>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-tabs">
+                <button class="filter-btn active" onclick="filterApps('all')">All Applications</button>
+                <button class="filter-btn" onclick="filterApps('media')">Media &amp; Player</button>
+                <button class="filter-btn" onclick="filterApps('finance')">Finance &amp; Cash</button>
+                <button class="filter-btn" onclick="filterApps('tools')">Tools &amp; Utilities</button>
+            </div>
         </div>
 
         <div class="apps-grid">
 
-            <!-- App 1: Cash Manager -->
-            <div class="app-card">
+            <!-- APP 1: Cash Manager -->
+            <div class="app-card" data-category="finance">
                 <div>
                     <div class="app-top">
-                        <div class="app-icon icon-cash">
-                            <!-- Cash / Finance Icon -->
-                            <svg width="38" height="38" fill="none" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2">
-                                <rect x="2" y="5" width="20" height="14" rx="3" />
-                                <circle cx="12" cy="12" r="3" />
-                                <path d="M6 12h.01M18 12h.01" />
-                            </svg>
+                        <!-- Custom Icon Match Image 3: Blue card + Wallet + Rupee symbol -->
+                        <div class="app-icon-frame" style="background: linear-gradient(135deg, #1d77f2 0%, #2583f7 50%, #1562d6 100%);">
+                            <div class="icon-svg-wrap">
+                                <svg width="84" height="84" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="cashBg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#218cf5"/>
+                                            <stop offset="100%" stop-color="#1268db"/>
+                                        </linearGradient>
+                                        <filter id="shadowCash" x="-10%" y="-10%" width="120%" height="120%">
+                                            <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+                                        </filter>
+                                    </defs>
+                                    <rect width="100" height="100" rx="22" fill="url(#cashBg)"/>
+                                    <!-- Wallet Body White -->
+                                    <rect x="25" y="25" width="50" height="45" rx="10" fill="#ffffff" filter="url(#shadowCash)"/>
+                                    <!-- Circular White Badge Top Right -->
+                                    <circle cx="68" cy="30" r="18" fill="#ffffff" filter="url(#shadowCash)"/>
+                                    <!-- Rupee Symbol ₹ -->
+                                    <text x="68" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#1874ea" text-anchor="middle">₹</text>
+                                </svg>
+                            </div>
                         </div>
                         <div class="app-title-wrap">
                             <h3>Cash Manager</h3>
@@ -759,22 +1124,24 @@
                                 <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                Finance &amp; Budget
+                                Finance &amp; Cash Record
                             </span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Take complete control over your daily income, expenses, and savings with smart budgeting charts, category tags, and instant financial reports.
+                        Easily track your daily cash entries, opening and closing balance records, notes, and quick financial summaries with an offline-first private design.
                     </p>
                     <ul class="app-features-list">
-                        <li><span class="check-icon">✓</span> Daily Expense &amp; Income Tracker</li>
-                        <li><span class="check-icon">✓</span> Insightful Visual Analytics &amp; Reports</li>
-                        <li><span class="check-icon">✓</span> Offline First — 100% Private &amp; Secure</li>
+                        <li><span class="check-icon">✓</span> Track daily cash entries and balance records</li>
+                        <li><span class="check-icon">✓</span> Morning/evening entry flow</li>
+                        <li><span class="check-icon">✓</span> History with notes &amp; search</li>
+                        <li><span class="check-icon">✓</span> Quick calculator &amp; summaries</li>
+                        <li><span class="check-icon">✓</span> Works offline; data stays on device</li>
+                        <li><span class="check-icon">✓</span> Optional ads; no login required</li>
                     </ul>
                 </div>
 
                 <a href="https://play.google.com/store/apps/details?id=com.samridhhigenai.cashmanager" target="_blank" rel="noopener" class="btn-playstore">
-                    <!-- Google Play SVG Logo -->
                     <svg viewBox="0 0 24 24">
                         <path fill="#4285F4" d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.22-.992V2.806c0-.363.08-.707.22-.992z"/>
                         <path fill="#FBBC04" d="M17.556 8.236L13.792 12l3.764 3.764 4.283-2.472a1.472 1.472 0 0 0 0-2.556l-4.283-2.5z"/>
@@ -785,35 +1152,61 @@
                 </a>
             </div>
 
-            <!-- App 2: Samriva Video & Audio Player -->
-            <div class="app-card">
+            <!-- APP 2: Samriva Video & Audio Player -->
+            <div class="app-card" data-category="media">
                 <div>
                     <div class="app-top">
-                        <div class="app-icon icon-player">
-                            <!-- Play / Media Icon -->
-                            <svg width="38" height="38" fill="none" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3" fill="#ffffff" fill-opacity="0.3" />
-                                <circle cx="12" cy="12" r="10" />
-                            </svg>
+                        <!-- Custom Icon Match Image 1: Dark Nebula background + Glowing Neon Blue/Magenta Play Button -->
+                        <div class="app-icon-frame" style="background: #080a18;">
+                            <div class="icon-svg-wrap">
+                                <svg width="84" height="84" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient id="nebulaAura" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                            <stop offset="0%" stop-color="#00d8ff" stop-opacity="0.8"/>
+                                            <stop offset="50%" stop-color="#a100ff" stop-opacity="0.6"/>
+                                            <stop offset="100%" stop-color="#080a18" stop-opacity="1"/>
+                                        </radialGradient>
+                                        <linearGradient id="neonTriangle" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#00f0ff"/>
+                                            <stop offset="50%" stop-color="#7000ff"/>
+                                            <stop offset="100%" stop-color="#ff00aa"/>
+                                        </linearGradient>
+                                        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                            <feGaussianBlur stdDeviation="3" result="blur"/>
+                                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                                        </filter>
+                                    </defs>
+                                    <rect width="100" height="100" rx="22" fill="#080a18"/>
+                                    <!-- Nebula Outer Cloud -->
+                                    <circle cx="50" cy="50" r="42" fill="url(#nebulaAura)"/>
+                                    <!-- Neon Triangle Glass Play Symbol -->
+                                    <path d="M38 28 C38 25 41 23 44 25 L74 46 C77 48 77 52 74 54 L44 75 C41 77 38 75 38 72 Z"
+                                          fill="none" stroke="url(#neonTriangle)" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" filter="url(#neonGlow)"/>
+                                    <polygon points="45,38 65,50 45,62" fill="#00f0ff" opacity="0.9"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="app-title-wrap">
-                            <h3>Video &amp; Audio Player</h3>
+                            <h3>Samriva Video &amp; Audio Player</h3>
                             <span class="app-category">
                                 <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                Media &amp; Video
+                                4K Media &amp; Audio
                             </span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        A powerhouse media player supporting 4K/Ultra HD video formats, hardware acceleration, gesture controls, background audio playback, and playlist management.
+                        A powerhouse media player supporting 4K Ultra HD video playback, hardware acceleration, gesture controls, 10-band equalizer, audio boost, and private vault.
                     </p>
                     <ul class="app-features-list">
-                        <li><span class="check-icon">✓</span> Ultra HD 4K &amp; All Codecs (MKV, MP4, MP3)</li>
-                        <li><span class="check-icon">✓</span> Intuitive Volume, Brightness &amp; Seek Gestures</li>
-                        <li><span class="check-icon">✓</span> Background Playback &amp; PIP Window Mode</li>
+                        <li><span class="check-icon">✓</span> 4K Ultra HD Playback &amp; All Formats (MKV, MP4, MP3, FLAC)</li>
+                        <li><span class="check-icon">✓</span> Smart Swipe Gestures (Volume, Brightness &amp; Double-Tap Seek)</li>
+                        <li><span class="check-icon">✓</span> 10-Band Equalizer, 200% Audio Boost &amp; Video-to-MP3 Extractor</li>
+                        <li><span class="check-icon">✓</span> Biometric Private Vault for Password-Protected Videos</li>
+                        <li><span class="check-icon">✓</span> AI Subtitle Generation, Translation &amp; PIP Window Mode</li>
+                        <li><span class="check-icon">✓</span> A-B Repeat Loop &amp; Speed Control (0.25x - 4.0x)</li>
                     </ul>
                 </div>
 
@@ -828,16 +1221,37 @@
                 </a>
             </div>
 
-            <!-- App 3: Ultra Files: File Manager -->
-            <div class="app-card">
+            <!-- APP 3: Ultra Files: File Manager -->
+            <div class="app-card" data-category="tools">
                 <div>
                     <div class="app-top">
-                        <div class="app-icon icon-files">
-                            <!-- Folder / Files Icon -->
-                            <svg width="38" height="38" fill="none" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2">
-                                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                                <path d="M9 13h6M12 10v6" stroke-linecap="round" />
-                            </svg>
+                        <!-- Custom Icon Match Image 2: Vibrant Royal Blue rounded square + White Folder + 'U' with Lightning Bolt + 2 motion lines -->
+                        <div class="app-icon-frame" style="background: linear-gradient(135deg, #2b68f6 0%, #1e58eb 100%);">
+                            <div class="icon-svg-wrap">
+                                <svg width="84" height="84" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <filter id="folderShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                            <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+                                        </filter>
+                                    </defs>
+                                    <rect width="100" height="100" rx="22" fill="#2b68f6"/>
+                                    <!-- Motion speed lines top right -->
+                                    <path d="M68 28 L76 20" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+                                    <path d="M74 32 L82 24" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+
+                                    <!-- White Folder Body -->
+                                    <path d="M22 36 C22 32 25 30 29 30 H42 L48 35 H71 C75 35 78 38 78 42 V68 C78 72 75 75 71 75 H29 C25 75 22 72 22 68 Z"
+                                          fill="#ffffff" filter="url(#folderShadow)"/>
+                                    <!-- Folder Top Divider -->
+                                    <line x1="22" y1="42" x2="78" y2="42" stroke="#e2e8f0" stroke-width="2"/>
+
+                                    <!-- Bold Blue 'U' Logo with Lightning Bolt -->
+                                    <path d="M38 48 V58 C38 64 43 68 50 68 C57 68 62 64 62 58 V48"
+                                          fill="none" stroke="#2b68f6" stroke-width="7" stroke-linecap="round"/>
+                                    <!-- Lightning Bolt inside U -->
+                                    <polygon points="51,49 46,57 50,57 48,64 55,55 51,55" fill="#2b68f6"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="app-title-wrap">
                             <h3>Ultra Files: File Manager</h3>
@@ -845,17 +1259,20 @@
                                 <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                 </svg>
-                                Tools &amp; Utilities
+                                Tools &amp; Storage Explorer
                             </span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Lightweight, lightning-fast file explorer to browse, organize, compress, clean junk, and manage internal and SD card storage with pinpoint precision.
+                        Lightweight, lightning-fast file explorer to browse, organize, compress, clean junk, and manage internal storage and SD cards with speed and security.
                     </p>
                     <ul class="app-features-list">
-                        <li><span class="check-icon">✓</span> Smart Storage Analyzer &amp; Junk Cleaner</li>
-                        <li><span class="check-icon">✓</span> ZIP/RAR Extractor &amp; Quick File Search</li>
-                        <li><span class="check-icon">✓</span> Secure Private Vault for Sensitive Files</li>
+                        <li><span class="check-icon">✓</span> Smart Storage Analyzer &amp; One-Tap Junk Cleaner</li>
+                        <li><span class="check-icon">✓</span> ZIP / RAR Archive Extractor &amp; Quick File Search</li>
+                        <li><span class="check-icon">✓</span> Biometric Private Vault for Encrypted File Protection</li>
+                        <li><span class="check-icon">✓</span> App Manager, Duplicate File Finder &amp; Cloud Sync</li>
+                        <li><span class="check-icon">✓</span> Material 3 Expressive UI &amp; Full Dark Mode Support</li>
+                        <li><span class="check-icon">✓</span> 100% Offline &amp; Private — Zero Personal Data Collection</li>
                     </ul>
                 </div>
 
@@ -871,19 +1288,19 @@
             </div>
 
             <!-- Future / Upcoming Apps Card -->
-            <div class="app-card card-upcoming">
-                <div class="upcoming-badge">🚀 In Active Development</div>
-                <div class="app-icon icon-soon" style="margin: 0 auto 16px;">
-                    <svg width="34" height="34" fill="none" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="2">
+            <div class="app-card card-upcoming" data-category="tools">
+                <div class="upcoming-badge">🚀 Active Research &amp; Development</div>
+                <div class="app-icon-frame" style="margin: 0 auto 20px; background: rgba(255, 255, 255, 0.05);">
+                    <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#818cf8" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
                 </div>
-                <h3>More Apps Coming Soon!</h3>
-                <p style="color: var(--text-muted); font-size: 14px; margin: 12px 0 20px;">
-                    We are crafting more state-of-the-art AI, productivity, and lifestyle applications. Stay tuned for exciting releases!
+                <h3>More Smart Apps Coming Soon!</h3>
+                <p style="color: var(--text-muted); font-size: 15px; margin: 12px 0 22px; line-height: 1.6;">
+                    We are crafting next-gen AI productivity, audio processing, and utility applications. Stay tuned for exciting Play Store releases!
                 </p>
-                <div style="font-size: 13px; color: var(--primary-light); font-weight: 600;">
-                    ✦ Designed by Samriva Labs
+                <div style="font-size: 14px; color: var(--primary-light); font-weight: 700;">
+                    ✦ Engineered by Samriva Labs
                 </div>
             </div>
 
@@ -893,50 +1310,93 @@
     <!-- Why Choose Samriva Labs Section -->
     <section id="features" class="container">
         <div class="section-header">
-            <span class="section-tag">Quality First</span>
-            <h2 class="section-title">Built with Craftsmanship</h2>
-            <p class="section-desc">Every application by Samriva Labs follows strict quality and privacy standards.</p>
+            <span class="section-tag">High Standards</span>
+            <h2 class="section-title">Built with Precision &amp; Quality</h2>
+            <p class="section-desc">Every application developed by Samriva Labs adheres to strict security, speed, and design standards.</p>
         </div>
 
         <div class="features-grid">
             <div class="feature-box">
                 <div class="feature-icon-wrap">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
                 </div>
-                <h4>Zero Data Tracking</h4>
-                <p>Your data belongs solely to you. Our apps prioritize local processing and do not harvest personal information.</p>
+                <h4>100% Offline &amp; Private</h4>
+                <p>Your sensitive data stays strictly on your device. Our apps prioritize local processing with zero personal data harvesting.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon-wrap">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h4>High Performance</h4>
-                <p>Optimized with the latest Kotlin and Native C++ engines to ensure smooth 120Hz refresh rates and minimal battery drain.</p>
+                <h4>Native Speed &amp; 120Hz</h4>
+                <p>Optimized with Kotlin, Jetpack Compose, and Native C++ engines to ensure fluid 120Hz refresh rates and minimal battery drain.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon-wrap">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                     </svg>
                 </div>
-                <h4>Modern &amp; Clean UI</h4>
-                <p>Designed following Google Material 3 guidelines for an intuitive, elegant, and clutter-free user experience.</p>
+                <h4>Material 3 Expressive UI</h4>
+                <p>Designed following Google's latest Material 3 Expressive guidelines for intuitive, clutter-free, and customizable user experiences.</p>
             </div>
 
             <div class="feature-box">
                 <div class="feature-icon-wrap">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                 </div>
-                <h4>Continuous Updates</h4>
-                <p>We actively listen to user feedback, delivering regular updates, bug fixes, and feature enhancements.</p>
+                <h4>Continuous Enhancements</h4>
+                <p>We actively listen to user feedback, delivering regular updates, performance improvements, and requested feature additions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container">
+        <div class="section-header">
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">Got questions about Samriva Labs applications? Here are quick answers.</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary-light)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Are Samriva Labs applications free to use?
+                </h4>
+                <p>Yes! All our applications are free to download and use from the Google Play Store with full core functionality available offline.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary-light)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    Is my financial or personal data stored on cloud servers?
+                </h4>
+                <p>No. Both Cash Manager and Ultra Files operate 100% locally on your device. Your financial entries and private files are never uploaded to any external server.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary-light)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+                    Does Samriva Video Player support 4K videos and subtitles?
+                </h4>
+                <p>Yes. Powered by native MPV hardware decoding, it supports 4K Ultra HD playback, subtitle auto-search, AI translations, and custom font styles.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--primary-light)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    How can I request new features or report issues?
+                </h4>
+                <p>We welcome your feedback! You can reach our developer team directly via email at <a href="mailto:rajnee.dubey1987@gmail.com" style="color: var(--primary-light);">rajnee.dubey1987@gmail.com</a>.</p>
             </div>
         </div>
     </section>
@@ -951,7 +1411,7 @@
                         <span class="logo-text">Samriva Labs</span>
                     </div>
                     <p>
-                        Building smart, reliable, and user-centric Android applications for millions of users worldwide.
+                        Building smart, high-performance, and user-centric Android applications for users worldwide.
                     </p>
                 </div>
 
@@ -967,20 +1427,184 @@
                 <div class="footer-col">
                     <h5>Support &amp; Legal</h5>
                     <ul>
-                        <li><a href="mailto:support@samrivalabs.com">Contact Developer</a></li>
-                        <li><a href="https://play.google.com/store/apps/developer?id=Samriva+Labs" target="_blank" rel="noopener">Google Play Profile</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="mailto:rajnee.dubey1987@gmail.com">Contact Developer</a></li>
+                        <li><a href="https://play.google.com/store/apps/developer?id=Abneesh+Kumar+Dubey" target="_blank" rel="noopener">Google Play Profile</a></li>
+                        <li><a href="javascript:void(0)" onclick="openLegalModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" onclick="openLegalModal('terms')">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <div>© 2026 <strong>Samriva Labs</strong>. All rights reserved.</div>
-                <div>Designed with passion for Android</div>
+                <div>Designed for Android Excellence</div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Scroll to top">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+        </svg>
+    </a>
+
+    <!-- Embedded Legal Modal Overlay (Single Page Self-Contained) -->
+    <div class="modal-overlay" id="legalModalOverlay" onclick="handleModalOverlayClick(event)">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-tabs">
+                    <button class="modal-tab-btn active" id="tabPrivacyBtn" onclick="switchLegalTab('privacy')">🔒 Privacy Policy</button>
+                    <button class="modal-tab-btn" id="tabTermsBtn" onclick="switchLegalTab('terms')">📜 Terms &amp; Conditions</button>
+                </div>
+                <button class="modal-close-btn" onclick="closeLegalModal()" aria-label="Close modal">✕</button>
+            </div>
+
+            <div class="modal-body" id="legalModalContent">
+                <!-- Privacy Policy Content -->
+                <div id="privacyContent">
+                    <h2>Privacy Policy</h2>
+                    <div class="modal-highlight">
+                        <strong>🔒 Summary:</strong> At <strong>Samriva Labs</strong>, your privacy is our top priority. Our applications (including <em>Samriva Video &amp; Audio Player</em>, <em>Cash Manager</em>, and <em>Ultra Files File Manager</em>) are designed with an offline-first architecture. We do not collect, store, or sell your personal data.
+                    </div>
+
+                    <h2>1. Information We Do Not Collect</h2>
+                    <p>We do not require account registration or personal logins to use our applications. We do not collect or harvest any personally identifiable information (PII) such as your name, email address, phone number, location, or financial transaction data.</p>
+
+                    <h2>2. Local Data Processing &amp; Storage</h2>
+                    <p>All data created within our applications remains strictly stored on your local Android device:</p>
+                    <ul>
+                        <li><strong>Cash Manager:</strong> Your daily income, expense entries, notes, and balance histories are stored entirely in local databases on your phone.</li>
+                        <li><strong>Ultra Files Manager:</strong> Your files, folders, and Private Vault encrypted documents remain 100% on your internal or SD card storage.</li>
+                        <li><strong>Samriva Video &amp; Audio Player:</strong> Playlists, playback history, equalizer settings, and Private Vault videos are stored locally.</li>
+                    </ul>
+
+                    <h2>3. Device Permissions &amp; How They Are Used</h2>
+                    <p>Our applications request Android system permissions strictly to perform core features:</p>
+                    <ul>
+                        <li><strong>Storage / Photos &amp; Videos Permission:</strong> Required to scan, list, and play media files or organize your local files.</li>
+                        <li><strong>Biometric Permission (Fingerprint/Face):</strong> Used locally to unlock your Private Vault. Your biometric data is handled securely by Android system APIs and is never accessible by our app.</li>
+                        <li><strong>Audio / Record Audio Permission:</strong> Used solely for audio visualizer rendering and equalizer processing.</li>
+                    </ul>
+
+                    <h2>4. Advertising &amp; Third-Party Services</h2>
+                    <p>Our applications may display advertisements provided by <strong>Google AdMob</strong> to support free development. AdMob may collect and use pseudonymous device identifiers (such as Advertising ID) for ad delivery and analytics.</p>
+
+                    <h2>5. Children's Privacy</h2>
+                    <p>Our applications do not knowingly collect or solicit personal information from children under the age of 13.</p>
+
+                    <h2>6. Contact Us</h2>
+                    <p>If you have any questions or suggestions regarding this Privacy Policy, feel free to contact us at:</p>
+                    <p>📧 Email: <a href="mailto:rajnee.dubey1987@gmail.com" class="contact-email">rajnee.dubey1987@gmail.com</a></p>
+                </div>
+
+                <!-- Terms & Conditions Content -->
+                <div id="termsContent" style="display: none;">
+                    <h2>Terms &amp; Conditions</h2>
+                    <div class="modal-highlight">
+                        <strong>📜 Terms Overview:</strong> By downloading, installing, or using any mobile applications published by <strong>Samriva Labs</strong>, you agree to be bound by these Terms and Conditions.
+                    </div>
+
+                    <h2>1. License &amp; Usage</h2>
+                    <p>Samriva Labs grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use the applications solely for your personal, non-commercial purposes in accordance with these Terms.</p>
+                    <ul>
+                        <li>You agree not to reverse engineer, decompile, or attempt to derive source code from the apps.</li>
+                        <li>You agree not to use the applications for any illegal, unauthorized, or prohibited activities.</li>
+                    </ul>
+
+                    <h2>2. User Data &amp; Local Storage Responsibilities</h2>
+                    <p>Our applications operate primarily on an offline, local-processing model. You are solely responsible for maintaining backup copies of your local files, financial cash records, and private vault items. Samriva Labs is not liable for data loss caused by device malfunction, factory resets, or app uninstallation.</p>
+
+                    <h2>3. Intellectual Property</h2>
+                    <p>All trademarks, logos, UI designs, code, and content associated with Samriva Labs are the intellectual property of Samriva Labs and protected by applicable copyright laws.</p>
+
+                    <h2>4. Advertisements &amp; In-App Features</h2>
+                    <p>Our applications may display third-party advertisements (such as Google AdMob) or offer optional rewarded ad unlocks for premium features.</p>
+
+                    <h2>5. Limitation of Liability</h2>
+                    <p>Our applications are provided "AS IS" and "AS AVAILABLE" without warranties of any kind. Samriva Labs shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the software.</p>
+
+                    <h2>6. Contact Information</h2>
+                    <p>If you have any questions or feedback regarding these Terms, please reach out to us:</p>
+                    <p>📧 Email: <a href="mailto:rajnee.dubey1987@gmail.com" class="contact-email">rajnee.dubey1987@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Category Filter
+        function filterApps(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const cards = document.querySelectorAll('.apps-grid .app-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                    card.style.animation = 'fadeIn 0.4s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Back to top scroll listener
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Legal Modal Logic (Single Page Self-Contained)
+        function openLegalModal(tab) {
+            switchLegalTab(tab);
+            document.getElementById('legalModalOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLegalModal() {
+            document.getElementById('legalModalOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function switchLegalTab(tab) {
+            const privacyBtn = document.getElementById('tabPrivacyBtn');
+            const termsBtn = document.getElementById('tabTermsBtn');
+            const privacyContent = document.getElementById('privacyContent');
+            const termsContent = document.getElementById('termsContent');
+
+            if (tab === 'privacy') {
+                privacyBtn.classList.add('active');
+                termsBtn.classList.remove('active');
+                privacyContent.style.display = 'block';
+                termsContent.style.display = 'none';
+            } else {
+                termsBtn.classList.add('active');
+                privacyBtn.classList.remove('active');
+                termsContent.style.display = 'block';
+                privacyContent.style.display = 'none';
+            }
+        }
+
+        function handleModalOverlayClick(e) {
+            if (e.target.id === 'legalModalOverlay') {
+                closeLegalModal();
+            }
+        }
+
+        // Close modal on Escape key press
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLegalModal();
+            }
+        });
+    </script>
 
 </body>
 </html>
