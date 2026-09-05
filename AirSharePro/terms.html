@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Terms & Conditions - AirSharePro</title>
+    <title>Terms &amp; Conditions - AirSharePro</title>
 
     <meta
         name="description"
@@ -19,6 +19,8 @@
             --background: #f8fafc;
             --card: #ffffff;
             --border: #e5e7eb;
+            --highlight-bg: #eff6ff;
+            --highlight-border: #bfdbfe;
         }
 
         * {
@@ -58,7 +60,7 @@
         }
 
         header {
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             padding-bottom: 25px;
             border-bottom: 1px solid var(--border);
         }
@@ -88,7 +90,7 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .meta {
@@ -99,6 +101,14 @@
         .app-name {
             color: var(--primary);
             font-weight: 700;
+        }
+
+        .highlight {
+            margin: 25px 0;
+            padding: 20px;
+            background: var(--highlight-bg);
+            border: 1px solid var(--highlight-border);
+            border-radius: 12px;
         }
 
         .contact-box {
@@ -135,7 +145,7 @@
 
         @media (max-width: 600px) {
             .container {
-                width: min(100% - 20px, 900px);
+                width: calc(100% - 20px);
                 margin: 10px auto;
             }
 
@@ -148,210 +158,235 @@
                 font-size: 20px;
                 margin-top: 30px;
             }
+
+            .highlight,
+            .contact-box {
+                padding: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <main class="container">
-        <article class="card">
+<main class="container">
+    <article class="card">
 
-            <header>
-                <h1>Terms &amp; Conditions for AirSharePro</h1>
+        <header>
+            <h1>Terms &amp; Conditions for AirSharePro</h1>
 
-                <div class="meta">
-                    <p>
-                        <strong>Last Updated:</strong> September 5, 2026
-                    </p>
-
-                    <p>
-                        <strong>Publisher:</strong> Samriva Labs<br>
-                        <strong>Package Name:</strong>
-                        <code>com.samrivalabs.airsharepro</code><br>
-                        <strong>Contact Email:</strong>
-                        <a href="mailto:support@samrivalabs.com">
-                            support@samrivalabs.com
-                        </a>
-                    </p>
-                </div>
-            </header>
-
-            <section>
-                <h2>1. Acceptance of Terms</h2>
-
+            <div class="meta">
                 <p>
-                    By downloading, installing, or using
-                    <span class="app-name">AirSharePro</span>
-                    ("the App"), you agree to be bound by these Terms and
-                    Conditions ("Terms"). If you do not agree with these Terms,
-                    please do not use the App.
-                </p>
-            </section>
-
-            <section>
-                <h2>2. Description of Service</h2>
-
-                <p>
-                    AirSharePro is a cross-platform file sharing and
-                    communication utility that enables users to securely
-                    transmit files, media, and text between compatible devices
-                    connected to the same local area network (LAN), Wi-Fi, or
-                    direct hotspot connection.
-                </p>
-            </section>
-
-            <section>
-                <h2>3. License and Permitted Use</h2>
-
-                <p>
-                    Samriva Labs grants you a personal, worldwide, revocable,
-                    non-exclusive, non-transferable license to use AirSharePro
-                    in accordance with these Terms.
-                </p>
-
-                <p>You agree <strong>not</strong> to use the App to:</p>
-
-                <ul>
-                    <li>
-                        Transmit or distribute malicious software, viruses,
-                        spyware, or harmful computer code.
-                    </li>
-
-                    <li>
-                        Transmit copyrighted files, intellectual property, or
-                        proprietary data without proper authorization or legal
-                        ownership.
-                    </li>
-
-                    <li>
-                        Violate any applicable local, national, or international
-                        laws or regulations.
-                    </li>
-
-                    <li>
-                        Interfere with, disrupt, or compromise local network
-                        operations or other connected devices.
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>4. User Responsibility &amp; File Content</h2>
-
-                <p>
-                    You are solely responsible for all content, files, media,
-                    or data transferred or received through AirSharePro.
-                    Samriva Labs does not monitor, review, or control user file
-                    transfers and assumes no liability for the content
-                    transferred by users.
-                </p>
-            </section>
-
-            <section>
-                <h2>5. Intellectual Property</h2>
-
-                <p>
-                    All trademarks, logos, branding, graphics, and design
-                    elements associated with
-                    <strong>AirSharePro</strong> and
-                    <strong>Samriva Labs</strong> are the property of
-                    Samriva Labs and are protected by relevant intellectual
-                    property laws.
-                </p>
-            </section>
-
-            <section>
-                <h2>6. Disclaimer of Warranties</h2>
-
-                <p>
-                    AirSharePro is provided on an
-                    <strong>"AS IS"</strong> and
-                    <strong>"AS AVAILABLE"</strong> basis without warranties
-                    of any kind, whether express or implied, including but not
-                    limited to implied warranties of merchantability, fitness
-                    for a particular purpose, network speed, or uninterrupted
-                    operation.
+                    <strong>Last Updated:</strong> September 5, 2026
                 </p>
 
                 <p>
-                    Transfer speeds and device discovery depend upon your
-                    local network hardware, Wi-Fi conditions, device
-                    capabilities, and OS permission settings.
-                </p>
-            </section>
-
-            <section>
-                <h2>7. Limitation of Liability</h2>
-
-                <p>
-                    To the maximum extent permitted by applicable law,
-                    Samriva Labs and its developers shall not be liable for
-                    any direct, indirect, incidental, special, consequential,
-                    or punitive damages resulting from:
-                </p>
-
-                <ul>
-                    <li>
-                        The use or inability to use the App;
-                    </li>
-
-                    <li>
-                        Any loss of data, file corruption, or network
-                        interruptions;
-                    </li>
-
-                    <li>
-                        Unauthorized access to transfers on unsecured local
-                        networks.
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>8. Modifications to the Terms</h2>
-
-                <p>
-                    Samriva Labs reserves the right to modify or replace these
-                    Terms at any time. Changes become effective upon release
-                    of updated application builds or documentation.
-                </p>
-            </section>
-
-            <section>
-                <h2>9. Contact Information</h2>
-
-                <p>
-                    If you have questions, feedback, or support inquiries
-                    regarding these Terms, please reach out to:
-                </p>
-
-                <div class="contact-box">
-                    <strong>Samriva Labs</strong><br>
-
-                    <strong>Email:</strong>
-                    <a href="mailto:support@samrivalabs.com">
+                    <strong>Publisher:</strong> Samriva Labs<br>
+                    <strong>Package Name:</strong>
+                    <code>com.samrivalabs.airsharepro</code><br>
+                    <strong>Contact Email:</strong>
+                    <a href="mailto:rajnee.dubey1987@gmail.com">
                         rajnee.dubey1987@gmail.com
                     </a>
-                    <br>
+                </p>
+            </div>
+        </header>
 
-                    <strong>Website:</strong>
-                    <a
-                        href="https://samrivalabs.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        https://rajneedubey.github.io/
-                    </a>
-                </div>
-            </section>
 
-        </article>
+        <!-- Section 1 -->
+        <section>
+            <h2>1. Acceptance of Terms</h2>
 
-        <footer>
-            &copy; 2026 Samriva Labs. All rights reserved.
-        </footer>
-    </main>
+            <p>
+                By downloading, installing, or using
+                <span class="app-name">AirSharePro</span>
+                ("the App"), you agree to be bound by these Terms and
+                Conditions ("Terms"). If you do not agree with these Terms,
+                please do not use the App.
+            </p>
+        </section>
+
+
+        <!-- Section 2 -->
+        <section>
+            <h2>2. Description of Service</h2>
+
+            <p>
+                AirSharePro is a cross-platform file sharing and
+                communication utility that enables users to securely
+                transmit files, media, and text between compatible devices
+                connected to the same local area network (LAN), Wi-Fi, or
+                direct hotspot connection.
+            </p>
+        </section>
+
+
+        <!-- Section 3 -->
+        <section>
+            <h2>3. License and Permitted Use</h2>
+
+            <p>
+                Samriva Labs grants you a personal, worldwide, revocable,
+                non-exclusive, non-transferable license to use AirSharePro
+                in accordance with these Terms.
+            </p>
+
+            <p>
+                You agree <strong>not</strong> to use the App to:
+            </p>
+
+            <ul>
+                <li>
+                    Transmit or distribute malicious software, viruses,
+                    spyware, or harmful computer code.
+                </li>
+
+                <li>
+                    Transmit copyrighted files, intellectual property,
+                    or proprietary data without proper authorization
+                    or legal ownership.
+                </li>
+
+                <li>
+                    Violate any applicable local, national, or international
+                    laws or regulations.
+                </li>
+
+                <li>
+                    Interfere with, disrupt, or compromise local network
+                    operations or other connected devices.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Section 4 -->
+        <section>
+            <h2>4. User Responsibility &amp; File Content</h2>
+
+            <p>
+                You are solely responsible for all content, files, media,
+                or data transferred or received through AirSharePro.
+                Samriva Labs does not monitor, review, or control user
+                file transfers and assumes no liability for the content
+                transferred by users.
+            </p>
+        </section>
+
+
+        <!-- Section 5 -->
+        <section>
+            <h2>5. Intellectual Property</h2>
+
+            <p>
+                All trademarks, logos, branding, graphics, and design
+                elements associated with
+                <strong>AirSharePro</strong> and
+                <strong>Samriva Labs</strong> are the property of
+                Samriva Labs and are protected by relevant intellectual
+                property laws.
+            </p>
+        </section>
+
+
+        <!-- Section 6 -->
+        <section>
+            <h2>6. Disclaimer of Warranties</h2>
+
+            <p>
+                AirSharePro is provided on an
+                <strong>"AS IS"</strong> and
+                <strong>"AS AVAILABLE"</strong> basis without warranties
+                of any kind, whether express or implied, including but
+                not limited to implied warranties of merchantability,
+                fitness for a particular purpose, network speed, or
+                uninterrupted operation.
+            </p>
+
+            <p>
+                Transfer speeds and device discovery depend upon your
+                local network hardware, Wi-Fi conditions, device
+                capabilities, and OS permission settings.
+            </p>
+        </section>
+
+
+        <!-- Section 7 -->
+        <section>
+            <h2>7. Limitation of Liability</h2>
+
+            <p>
+                To the maximum extent permitted by applicable law,
+                Samriva Labs and its developers shall not be liable
+                for any direct, indirect, incidental, special,
+                consequential, or punitive damages resulting from:
+            </p>
+
+            <ul>
+                <li>
+                    The use or inability to use the App;
+                </li>
+
+                <li>
+                    Any loss of data, file corruption, or network
+                    interruptions;
+                </li>
+
+                <li>
+                    Unauthorized access to transfers on unsecured
+                    local networks.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Section 8 -->
+        <section>
+            <h2>8. Modifications to the Terms</h2>
+
+            <p>
+                Samriva Labs reserves the right to modify or replace
+                these Terms at any time. Changes become effective upon
+                release of updated application builds or documentation.
+            </p>
+        </section>
+
+
+        <!-- Section 9 -->
+        <section>
+            <h2>9. Contact Information</h2>
+
+            <p>
+                If you have questions, feedback, or support inquiries
+                regarding these Terms, please reach out to:
+            </p>
+
+            <div class="contact-box">
+                <strong>Samriva Labs</strong><br>
+
+                <strong>Email:</strong>
+                <a href="mailto:rajnee.dubey1987@gmail.com">
+                    rajnee.dubey1987@gmail.com
+                </a>
+                <br>
+
+                <strong>Website:</strong>
+                <a
+                    href="https://rajneedubey.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    https://rajneedubey.github.io/
+                </a>
+            </div>
+        </section>
+
+    </article>
+
+    <footer>
+        &copy; 2026 Samriva Labs. All rights reserved.
+    </footer>
+</main>
 
 </body>
 </html>
