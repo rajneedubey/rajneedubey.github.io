@@ -3,217 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Cash Manager</title>
+    <title>Privacy Policy - Cash Manager App</title>
     <style>
-        :root {
-            --primary-color: #1976D2;
-            --secondary-color: #0D47A1;
-            --text-color: #333333;
-            --bg-color: #F4F6F9;
-            --card-bg: #FFFFFF;
-            --border-color: #E0E0E0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
-        header {
-            background-color: var(--primary-color);
-            color: #FFFFFF;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin: 0.5rem 0 0;
-            opacity: 0.9;
-            font-size: 1rem;
-        }
-
-        nav {
-            background-color: var(--secondary-color);
-            text-align: center;
-            padding: 0.75rem;
-        }
-
-        nav a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
+        
         .container {
             max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .card {
-            background-color: var(--card-bg);
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
             border-radius: 8px;
-            padding: 2.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #007AFF;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            color: #007AFF;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+        
         h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--bg-color);
-            padding-bottom: 0.5rem;
-            margin-top: 1.8rem;
-            font-size: 1.4rem;
+            color: #007AFF;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-left: 4px solid #007AFF;
+            padding-left: 15px;
         }
-
-        h2:first-of-type {
+        
+        h3 {
+            color: #0055CC;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.15em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+        
+        strong {
+            color: #0055CC;
+        }
+        
+        .highlight {
+            background-color: #FFF3CD;
+            padding: 15px;
+            border-left: 4px solid #FFC107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .contact-box {
+            background-color: #E7F3FF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #007AFF;
+        }
+        
+        .contact-box p {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #007AFF;
+            text-decoration: none;
+            word-break: break-word;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        table th {
+            background-color: #007AFF;
+            color: white;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .section-number {
+            color: #007AFF;
+            font-weight: bold;
+        }
+        
+        .toc {
+            background-color: #F0F7FF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .toc h3 {
+            color: #007AFF;
             margin-top: 0;
         }
-
-        p, ul {
-            margin-bottom: 1rem;
+        
+        .toc ol {
+            margin-left: 20px;
         }
-
-        ul {
-            padding-left: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight-box {
-            background-color: #E3F2FD;
-            border-left: 4px solid var(--primary-color);
-            padding: 1rem 1.25rem;
-            border-radius: 0 6px 6px 0;
-            margin: 1.5rem 0;
-        }
-
-        .contact-box {
-            background-color: #F8F9FA;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 1.25rem;
-            margin-top: 1.5rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            color: #666666;
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            background-color: #FFFFFF;
-        }
-
-        @media (max-width: 600px) {
-            .card {
-                padding: 1.5rem;
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
             }
-
+            
             header h1 {
-                font-size: 1.75rem;
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
             }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Cash Manager</h1>
-        <p>Privacy Policy</p>
-    </header>
-
-    <nav>
-        <a href="privacy_policy.html">Privacy Policy</a>
-        <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
-    </nav>
-
     <div class="container">
-        <div class="card">
-            <p><strong>Effective Date:</strong> January 18, 2026</p>
-            <p><strong>Last Updated:</strong> September 6, 2026</p>
-
-            <div class="highlight-box">
-                <strong>Summary:</strong> Cash Manager stores your cash records primarily on your device and may use Google Mobile Ads and Firebase services. These services may process advertising identifiers, device information, app activity, diagnostics, and performance data. Cash records are not used to serve personalized advertisements.
-            </div>
-
-            <h2>1. Overview</h2>
-            <p>This Privacy Policy explains how <strong>Cash Manager</strong> ("we", "our", or "us") handles information when you use our mobile application (the "App"). We are committed to protecting your privacy and ensuring a secure user experience.</p>
-
-            <h2>2. Information Collection and Storage</h2>
-            <p>Cash Manager does not require an account for its core features. Cash records, denomination counts, balances, notes, and language settings are primarily stored locally on your device. Depending on the app version and enabled features, limited information may be processed by third-party services described below.</p>
-            <ul>
-                <li><strong>Local Data Storage:</strong> All cash records, morning and evening tally counts, denomination inputs, initial balance preferences, and language settings created within the App are stored strictly on your device using local storage mechanisms (such as <code>SharedPreferences</code>).</li>
-                <li><strong>No Account Required:</strong> You are not required to create an account, register, or provide personal details (such as name, email address, phone number, or banking details) to use the App.</li>
-                <li><strong>Financial Information:</strong> The App may process other financial information that you enter, such as cash balances, cash counts, transactions, notes, and related records. Please do not enter unnecessary sensitive personal information.</li>
-                <li><strong>Device and Usage Information:</strong> The App and its service providers may process device or other IDs, app interactions, app information, performance data, crash logs, diagnostics, and general usage information.</li>
-            </ul>
-
-            <h2>3. Device Permissions</h2>
-            <p>The App is designed to operate with minimal permissions. Third-party advertising and analytics services may automatically receive certain device or advertising identifiers and technical information required to provide, measure, and secure their services. The App does not request access to your contacts, camera, or media for its core cash-management features.</p>
-
-            <h2>4. Internet &amp; Network Access</h2>
-            <p>Cash Manager uses an Internet connection when required to load advertisements, provide analytics or crash reporting, receive configuration information, or support other online services. Cash-management features may continue to work offline, but advertisements and online services may not be available without an Internet connection.</p>
-
-            <h2>5. Advertising and Third-Party Services</h2>
-            <p>The published Cash Manager app contains advertisements and offers an optional in-app purchase to remove ads. We use third-party services, which may process information according to their own privacy policies:</p>
-            <ul>
-                <li><strong>Google Mobile Ads:</strong> Used to display and measure advertisements. Google may process advertising identifiers, device information, approximate location inferred from network information, ad interactions, and diagnostics. Ad personalization may depend on your device settings, consent, region, and applicable law.</li>
-                <li><strong>Firebase:</strong> May be used for analytics, crash reporting, performance monitoring, and remote configuration. These services may process app interactions, diagnostics, crash logs, device information, and app performance data.</li>
-                <li><strong>Shared Preferences:</strong> Used for local storage of app settings and cash-management records.</li>
-            </ul>
-            <p>For more information, review <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Cash Manager does not intentionally send your cash records to advertising providers for ad targeting.</p>
-
-            <h2>6. Data Security</h2>
-            <p>Data transmitted to supported online services is encrypted in transit where provided by those services. Local cash records remain subject to the security of your device and operating system. No method of storage or transmission is completely secure, so we recommend protecting your device with a PIN, password, fingerprint, or other available security control.</p>
-
-            <h2>7. Data Retention and Deletion</h2>
-            <p>You can control your local app data and may request deletion of data associated with the App by contacting us at the email address below.</p>
-            <ul>
-                <li>You can delete individual history records directly inside the App.</li>
-                <li>Clearing the App data or uninstalling the App from your device will permanently remove all stored cash records.</li>
-                <li>To request deletion of information processed by supported online services, contact us with sufficient details to identify your request. We will review and process valid requests as required by applicable law and service-provider requirements.</li>
-            </ul>
-
-            <h2>8. Your Choices and Rights</h2>
-            <p>Subject to applicable law, you may have the right to request access to, correction of, or deletion of personal information associated with the App. You may also be able to limit personalized advertising through your Android device's advertising and privacy settings. You can contact us to ask questions about data practices or submit a deletion request.</p>
-
-            <h2>9. Children's Privacy</h2>
-            <p>Cash Manager is intended for general professional and personal use, primarily designed for bank cashiers and cash handling professionals. We do not knowingly collect any information from children under the age of 13.</p>
-
-            <h2>10. Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. Any updates will be reflected by updating the "Last Updated" date at the top of this policy. You are advised to review this page periodically for any changes.</p>
-
-            <h2>11. Contact Us</h2>
-            <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to contact us:</p>
-            <div class="contact-box">
-                <p><strong>Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></p>
-                <p><strong>Application:</strong> Cash Manager (com.samridhhigenai.cashmanager)</p>
-            </div>
-        </div>
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: January 18, 2026</p>
+        </header>
+        
+        <main>
+            <section id="introduction">
+                <h2><span class="section-number">1.</span> Introduction</h2>
+                <p>Welcome to Cash Manager App ("we," "us," "our," or "Company"). We are committed to protecting your privacy and ensuring you have a positive experience on our application. This Privacy Policy explains our online information practices and the choices you can make about the way your information is collected and used.</p>
+            </section>
+            
+            <section id="information-collected">
+                <h2><span class="section-number">2.</span> Information We Collect</h2>
+                
+                <h3>2.1 User-Provided Information</h3>
+                <ul>
+                    <li><strong>Account Information</strong>: Name, email address, phone number (if provided)</li>
+                    <li><strong>Financial Data</strong>: Cash records, transactions, balances, notes, and financial entries you manually input</li>
+                    <li><strong>Device Information</strong>: Device type, operating system, app version, unique device identifiers</li>
+                    <li><strong>Usage Data</strong>: How you interact with the app, features you use, time spent on specific screens</li>
+                </ul>
+                
+                <h3>2.2 Automatically Collected Information</h3>
+                <ul>
+                    <li><strong>Analytics Data</strong>: App performance metrics, crash reports, user flow analytics</li>
+                    <li><strong>Location Data</strong>: General location information (if permissions granted)</li>
+                    <li><strong>Log Data</strong>: Timestamps, IP addresses, error messages, activity logs</li>
+                </ul>
+                
+                <h3>2.3 Third-Party Information</h3>
+                <ul>
+                    <li><strong>Google Mobile Ads</strong>: Advertising identifiers for personalized ad serving</li>
+                    <li><strong>Firebase</strong>: Analytics and performance monitoring data</li>
+                    <li><strong>Firebase Remote Config</strong>: Feature flags and app configuration data</li>
+                </ul>
+            </section>
+            
+            <section id="how-we-use">
+                <h2><span class="section-number">3.</span> How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li><strong>Core Functionality</strong>: To provide and maintain the app's features and services</li>
+                    <li><strong>Personalization</strong>: To customize your experience based on preferences</li>
+                    <li><strong>Communication</strong>: To send important updates, notifications, and customer support responses</li>
+                    <li><strong>Analytics</strong>: To understand app usage patterns and improve performance</li>
+                    <li><strong>Advertising</strong>: To serve relevant advertisements and measure ad effectiveness</li>
+                    <li><strong>Security</strong>: To detect and prevent fraud, abuse, and security incidents</li>
+                    <li><strong>Legal Compliance</strong>: To comply with applicable laws and regulations</li>
+                    <li><strong>App Improvement</strong>: To develop new features and enhance existing functionality</li>
+                </ul>
+            </section>
+            
+            <section id="data-storage">
+                <h2><span class="section-number">4.</span> Data Storage and Security</h2>
+                
+                <h3>4.1 Local Storage</h3>
+                <ul>
+                    <li>Your cash records and financial data are primarily stored locally on your device</li>
+                    <li>We use encryption where applicable to protect sensitive data</li>
+                    <li>You have full control over your data and can delete it anytime</li>
+                </ul>
+                
+                <h3>4.2 Cloud Storage</h3>
+                <ul>
+                    <li>Data may be backed up to Firebase (Google's cloud service) if you enable cloud backup</li>
+                    <li>These backups are encrypted in transit and at rest</li>
+                    <li>You can disable cloud backup in app settings</li>
+                </ul>
+                
+                <h3>4.3 Security Measures</h3>
+                <ul>
+                    <li>We implement industry-standard security protocols</li>
+                    <li>However, no method of transmission over the internet is 100% secure</li>
+                    <li>We cannot guarantee absolute security but commit to reasonable safeguards</li>
+                </ul>
+            </section>
+            
+            <section id="data-sharing">
+                <h2><span class="section-number">5.</span> Information Sharing and Disclosure</h2>
+                
+                <h3>5.1 We Do NOT Share Your Data With:</h3>
+                <ul>
+                    <li>Third-party marketers or advertisers (except Google Ads)</li>
+                    <li>Social media platforms</li>
+                    <li>Data brokers or information resellers</li>
+                    <li>Any unauthorized third parties</li>
+                </ul>
+                
+                <h3>5.2 We MAY Share Your Data With:</h3>
+                <ul>
+                    <li><strong>Service Providers</strong>: Companies that assist us in app operations (Firebase, Analytics providers)</li>
+                    <li><strong>Legal Requirements</strong>: When required by law, court order, or government request</li>
+                    <li><strong>Safety and Protection</strong>: When necessary to protect our rights, privacy, safety, or property</li>
+                    <li><strong>Business Transfers</strong>: In case of merger, acquisition, or asset sale</li>
+                </ul>
+            </section>
+            
+            <section id="third-party">
+                <h2><span class="section-number">6.</span> Third-Party Services</h2>
+                <p>Our app integrates with the following third-party services:</p>
+                <ul>
+                    <li><strong>Firebase (Google)</strong>: For analytics, crash reporting, and remote configuration
+                        <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                    <li><strong>Google Mobile Ads</strong>: For displaying advertisements
+                        <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                    <li><strong>Shared Preferences</strong>: For local data storage</li>
+                    <li><strong>URL Launcher</strong>: For opening external links</li>
+                </ul>
+                <p>Each service has its own privacy policy. We recommend reviewing them.</p>
+            </section>
+            
+            <section id="user-rights">
+                <h2><span class="section-number">7.</span> User Rights and Data Control</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li><strong>Access</strong>: Request information about what data we collect about you</li>
+                    <li><strong>Delete</strong>: Delete your account and all associated data</li>
+                    <li><strong>Modify</strong>: Update or correct your personal information</li>
+                    <li><strong>Export</strong>: Export your financial records</li>
+                    <li><strong>Opt-Out</strong>: Disable personalized advertising and analytics</li>
+                    <li><strong>Withdraw Consent</strong>: Opt out of specific data collection practices</li>
+                </ul>
+                <p>To exercise these rights, contact us at: <strong>[your-email@example.com]</strong></p>
+            </section>
+            
+            <section id="children">
+                <h2><span class="section-number">8.</span> Children's Privacy</h2>
+                <p>Cash Manager App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will delete such information and terminate the child's account.</p>
+            </section>
+            
+            <section id="data-retention">
+                <h2><span class="section-number">9.</span> Data Retention</h2>
+                <ul>
+                    <li><strong>Financial Records</strong>: Retained for as long as you maintain your account</li>
+                    <li><strong>Analytics Data</strong>: Retained for up to 12 months</li>
+                    <li><strong>Account Data</strong>: Deleted within 30 days of account deletion</li>
+                    <li><strong>Backup Data</strong>: Deleted according to cloud storage provider policies</li>
+                </ul>
+            </section>
+            
+            <section id="changes">
+                <h2><span class="section-number">10.</span> Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated "Last Updated" date. Your continued use of the app constitutes acceptance of the updated policy.</p>
+            </section>
+            
+            <section id="ccpa">
+                <h2><span class="section-number">11.</span> California Privacy Rights (CCPA)</h2>
+                <p>If you are a California resident, you have the right to:</p>
+                <ul>
+                    <li>Know what personal information is collected</li>
+                    <li>Know whether your personal information is sold or disclosed</li>
+                    <li>Say no to the sale or sharing of personal information</li>
+                    <li>Delete personal information collected from you</li>
+                    <li>Not face discrimination for exercising CCPA rights</li>
+                </ul>
+            </section>
+            
+            <section id="gdpr">
+                <h2><span class="section-number">12.</span> European Privacy Rights (GDPR)</h2>
+                <p>If you are located in the EU, you have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Rectify inaccurate data</li>
+                    <li>Erasure (right to be forgotten)</li>
+                    <li>Restrict processing</li>
+                    <li>Data portability</li>
+                    <li>Object to processing</li>
+                    <li>Withdraw consent</li>
+                </ul>
+            </section>
+            
+            <section id="contact">
+                <h2><span class="section-number">13.</span> Contact Us</h2>
+                <div class="contact-box">
+                    <p><strong>For privacy-related inquiries, complaints, or to exercise your rights:</strong></p>
+                    <p><strong>Email:</strong> rajnee.dubey1987@gmail.com</p>
+                    <p><strong>Response Time:</strong> We will respond to requests within 30 days</p>
+                </div>
+            </section>
+            
+            <section id="governing-law">
+                <h2><span class="section-number">14.</span> Governing Law</h2>
+                <p>This Privacy Policy is governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p><strong>Your privacy is important to us. Thank you for using Cash Manager App.</strong></p>
+            <p>Last Updated: January 18, 2026</p>
+        </footer>
     </div>
-
-    <footer>
-        &copy; 2026 Cash Manager. All rights reserved. | <a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
-    </footer>
-
 </body>
 </html>
