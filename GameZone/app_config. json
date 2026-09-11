@@ -16,8 +16,10 @@
     "interstitial_click_interval": 3
   },
   "app_settings": {
+    "welcome_bonus_coins": 1000,
+    "daily_login_bonus_coins": 25,
     "maintenance_mode": false,
-    "support_email": "https://rajneedubey.github.io/",
+    "support_email": "rajnee.dubey1987@gmail.com",
     "privacy_policy_url": "https://rajneedubey.github.io/GameZone/privacy_policy.html"
   }
 }
