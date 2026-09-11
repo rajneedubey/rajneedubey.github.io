@@ -16,7 +16,7 @@
     "interstitial_click_interval": 3
   },
   "app_settings": {
-    "welcome_bonus_coins": 1000,
+    "welcome_bonus_coins": 2000,
     "daily_login_bonus_coins": 25,
     "maintenance_mode": false,
     "support_email": "rajnee.dubey1987@gmail.com",
