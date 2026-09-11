@@ -8,57 +8,97 @@
         body {
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            padding: 24px 20px 40px 20px;
             margin: 0;
         }
-        h1 { color: #bb86fc; font-size: 24px; margin-bottom: 10px; }
-        h2 { color: #03dac6; font-size: 18px; margin-top: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #bb86fc; font-size: 26px; margin-bottom: 8px; }
+        h2 { color: #03dac6; font-size: 18px; margin-top: 24px; border-bottom: 1px solid #2d2d2d; padding-bottom: 6px; }
         p, li { font-size: 14px; color: #b0b0b0; }
         ul { padding-left: 20px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .footer { margin-top: 30px; font-size: 12px; color: #777; text-align: center; }
+        strong { color: #ffffff; }
+        .meta { font-size: 13px; color: #888888; margin-bottom: 20px; }
+        .highlight-box {
+            background-color: #1e1e2f;
+            border-left: 4px solid #bb86fc;
+            padding: 14px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #262626;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+        a { color: #bb86fc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p>Last updated: September 8, 2026</p>
+        <div class="meta">Last updated: September 11, 2026 • Published by <strong>Samriva Labs</strong></div>
 
-        <p>Welcome to <strong>GameZone</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our mobile application and tell you about your privacy rights and how the law protects you.</p>
+        <p>Welcome to <strong>GameZone</strong> ("App", "we", "our", or "us"). Samriva Labs is dedicated to respecting and protecting the privacy rights of our users. This Privacy Policy details how we handle technical and operational data when you play games within our mobile application, in compliance with the <strong>Google Play Developer Policy</strong>, the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA / CPRA)</strong>, and the <strong>Children's Online Privacy Protection Act (COPPA)</strong>.</p>
 
-        <h2>1. Information We Collect</h2>
-        <p>When you use GameZone, we may collect minimal information to provide and improve our service, including:</p>
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> We do not require account registration, nor do we collect personally identifiable information such as your name, email address, physical address, or phone number to play games. Gameplay progress and virtual coins are stored locally on your device.
+        </div>
+
+        <h2>1. Information We Collect & Process</h2>
+        <p>When you interact with the App, we and third-party SDK service providers may automatically collect certain diagnostic and advertising data:</p>
         <ul>
-            <li><strong>Device Information:</strong> Device type, operating system version, and unique device identifiers.</li>
-            <li><strong>Gameplay Data:</strong> Scores, high scores, coins earned, and game progression stored locally on your device via SharedPreferences.</li>
-            <li><strong>Advertising Data:</strong> AdMob identifiers and interaction data to serve relevant interstitial and rewarded advertisements.</li>
+            <li><strong>Device & System Information:</strong> Device model, operating system version, system language, screen resolution, and network connection type (Wi-Fi or cellular).</li>
+            <li><strong>Advertising Identifiers:</strong> Anonymous Google Advertising ID (GAID / AAID) utilized by Google AdMob to deliver, cap frequency, and measure ad performance.</li>
+            <li><strong>Local Game Storage:</strong> In-game coin balance, unlocked game levels, theme preferences, and audio settings are saved locally on your device storage via secure local preferences.</li>
+            <li><strong>Technical Diagnostics:</strong> Anonymized crash logs and app performance metrics to ensure stability and smooth HTML5 canvas rendering.</li>
         </ul>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the collected data for the following purposes:</p>
+        <h2>2. Third-Party Services & Monetization (Google AdMob)</h2>
+        <p>GameZone is supported through advertising provided by <strong>Google AdMob</strong> (Banner, Interstitial, Rewarded, Native Advanced, and App Open ads). Google AdMob may process your device advertising identifier and interaction metrics in accordance with Google's Privacy Policy:</p>
+        <p><a href="https://policies.google.com/technologies/ads" target="_blank">Google Advertising Privacy & Terms</a></p>
+        <p>We do not sell, rent, or trade your personal data to any third parties.</p>
+
+        <h2>3. European Privacy (GDPR & UK GDPR)</h2>
+        <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have rights under the GDPR regarding your personal data:</p>
         <ul>
-            <li>To operate and maintain the GameZone app.</li>
-            <li>To manage your game unlocks, coin balance, and user preferences.</li>
-            <li>To display personalized advertisements through Google AdMob.</li>
-            <li>To analyze app performance and fix technical bugs.</li>
+            <li><strong>Google User Messaging Platform (UMP):</strong> We integrate Google's certified UMP consent framework (IAB TCF v2.2) to collect and record your consent preferences before serving personalized ads.</li>
+            <li><strong>Revoking or Modifying Consent:</strong> You can review, update, or withdraw your consent choice at any time inside the App by visiting <strong>Profile & Settings &gt; Privacy & Consent Preferences</strong>.</li>
+            <li><strong>Legal Basis:</strong> We process telemetry data on the basis of legitimate interest to maintain app functionality and process ad-related identifiers based on your explicit consent.</li>
         </ul>
 
-        <h2>3. Third-Party Services</h2>
-        <p>Our app integrates with Google Mobile Ads (AdMob) SDK. AdMob may collect and use data in accordance with Google's Privacy Policy. We do not sell, trade, or rent your personal identification information to third parties.</p>
+        <h2>4. US State Privacy Laws (CCPA / CPRA)</h2>
+        <p>For residents of California, Colorado, Connecticut, Virginia, and other applicable US states:</p>
+        <ul>
+            <li>We do not sell personal information for monetary consideration.</li>
+            <li>You have the right to opt out of the sharing of personal information for cross-context behavioral advertising via the in-app consent preferences modal.</li>
+            <li>You have the right to request information regarding any collected technical categories by contacting our support team.</li>
+        </ul>
 
-        <h2>4. Data Security</h2>
-        <p>We implement appropriate security measures to protect against unauthorized access, alteration, disclosure, or destruction of your data.</p>
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
+        <p>GameZone does not knowingly target children under 13 (or under 16 in certain jurisdictions) for the collection of personal data. All games are family-friendly HTML5 arcade experiences. If you believe a child has provided personal information without parental consent, please contact us immediately so we can promptly take corrective action.</p>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        <h2>6. Data Retention & Security</h2>
+        <p>Because your high scores and coin balances reside locally on your device, you retain full ownership and control over your data. You can delete all locally stored records at any time by clearing the App data in your Android system settings or by uninstalling the application.</p>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at rajnee.dubey1987@gmail.com.</p>
+        <h2>7. Changes to This Policy</h2>
+        <p>We may periodically update this Privacy Policy to reflect changes in legal requirements or app features. Updates will take effect immediately upon being posted within the application.</p>
+
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions, concerns, or inquiries regarding this Privacy Policy or data practices, please reach out to us:</p>
+        <ul>
+            <li><strong>Developer:</strong> Samriva Labs</li>
+            <li><strong>Support Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://rajneedubey.github.io/" target="_blank">https://rajneedubey.github.io/</a></li>
+        </ul>
 
         <div class="footer">
-            &copy; 2026 GameZone (Samriva Labs). All rights reserved.
+            &copy; 2026 GameZone • Samriva Labs. All rights reserved.
         </div>
     </div>
 </body>
