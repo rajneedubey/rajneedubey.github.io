@@ -11,12 +11,12 @@
   "monetization_config": {
     "ads_enabled": true,
     "daily_rewarded_limit": 4,
-    "reward_bonus_coins": 15,
+    "reward_bonus_coins": 5,
     "reward_bonus_score": 500,
     "interstitial_click_interval": 3
   },
   "app_settings": {
-    "welcome_bonus_coins": 1000,
+    "welcome_bonus_coins": 25,
     "daily_login_bonus_coins": 25,
     "maintenance_mode": false,
     "support_email": "rajnee.dubey1987@gmail.com",
