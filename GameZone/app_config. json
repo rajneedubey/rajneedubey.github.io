@@ -21,5 +21,20 @@
     "maintenance_mode": false,
     "support_email": "rajnee.dubey1987@gmail.com",
     "privacy_policy_url": "https://rajneedubey.github.io/GameZone/privacy_policy.html"
-  }
+  },
+  "cross_promo_apps": [
+    {
+      "title": "Sudoku Brain Puzzle",
+      "description": "Daily Challenging Number Games",
+      "package_name": "com.samrivalabs.sudoku",
+      "icon_url": "https://rajneedubey.github.io/GameZone/icons/sudoku.png"
+    },
+    {
+      "title": "Neon 2048 Arcade",
+      "description": "Addictive Tile Sliding Game",
+      "package_name": "com.samrivalabs.neon2048",
+      "icon_url": "https://rajneedubey.github.io/GameZone/icons/2048.png"
+    }
+  ],
+  "developer_account_id": "Abneesh+Kumar+Dubey"
 }
