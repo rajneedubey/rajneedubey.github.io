@@ -10,8 +10,8 @@
   },
   "monetization_config": {
     "ads_enabled": true,
-    "daily_rewarded_limit": 4,
-    "reward_bonus_coins": 5,
+    "daily_rewarded_limit": 8,
+    "reward_bonus_coins": 20,
     "reward_bonus_score": 500,
     "interstitial_click_interval": 3
   },
