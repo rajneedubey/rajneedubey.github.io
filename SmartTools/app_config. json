@@ -1,0 +1,40 @@
+{
+  "app_update": {
+    "latest_version_code": 1,
+    "latest_version_name": "1.0.0",
+    "min_supported_version_code": 1,
+    "is_force_update": false,
+    "update_title": "🚀 New Games & Features Available!",
+    "update_message": "Update now to experience smoother gameplay and unlock brand new games.",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.samrivalabs.games"
+  },
+  "monetization_config": {
+    "ads_enabled": true,
+    "daily_rewarded_limit": 8,
+    "reward_bonus_coins": 20,
+    "reward_bonus_score": 500,
+    "interstitial_click_interval": 3
+  },
+  "app_settings": {
+    "welcome_bonus_coins": 25,
+    "daily_login_bonus_coins": 25,
+    "maintenance_mode": false,
+    "support_email": "rajnee.dubey1987@gmail.com",
+    "privacy_policy_url": "https://rajneedubey.github.io/GameZone/privacy_policy.html"
+  },
+  "cross_promo_apps": [
+    {
+      "title": "Sudoku Brain Puzzle",
+      "description": "Daily Challenging Number Games",
+      "package_name": "com.samrivalabs.sudoku",
+      "icon_url": "https://rajneedubey.github.io/GameZone/icons/sudoku.png"
+    },
+    {
+      "title": "Neon 2048 Arcade",
+      "description": "Addictive Tile Sliding Game",
+      "package_name": "com.samrivalabs.neon2048",
+      "icon_url": "https://rajneedubey.github.io/GameZone/icons/2048.png"
+    }
+  ],
+  "developer_account_id": "Abneesh+Kumar+Dubey"
+}
