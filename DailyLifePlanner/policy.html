@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner - Privacy Policy & Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0D8A6A;
+            --primary-dark: #065F46;
+            --primary-light: #E6F4F1;
+            --accent: #10B981;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --sidebar-bg: #F1F5F9;
+            --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        [data-theme="dark"] {
+            --bg: #0F172A;
+            --card-bg: #1E293B;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border: #334155;
+            --sidebar-bg: #162032;
+            --primary-light: #134E4A;
+            --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0;
+        }
+
+        /* Header Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #0D8A6A, #10B981);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(13, 138, 106, 0.3);
+        }
+
+        .tab-switcher {
+            display: flex;
+            background: var(--sidebar-bg);
+            padding: 4px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            border: none;
+            background: transparent;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .tab-btn.active {
+            background: var(--card-bg);
+            color: var(--primary);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .theme-toggle {
+            background: var(--sidebar-bg);
+            border: 1px solid var(--border);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-main);
+            font-size: 1.1rem;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .badge-bar {
+            margin-top: 16px;
+            display: inline-flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 36px;
+            align-items: start;
+        }
+
+        /* Sticky Sidebar Navigation */
+        .sidebar {
+            position: sticky;
+            top: 90px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar h4 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .sidebar-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .sidebar-links a:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        /* Content Card */
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: var(--text-main);
+        }
+
+        p, li {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        /* Callout Box */
+        .callout {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .callout p {
+            color: var(--text-main);
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        /* Data Table */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--sidebar-bg);
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        td {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            padding: 32px 24px;
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 860px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                margin: 24px auto;
+            }
+            .sidebar {
+                display: none;
+            }
+            .content-card {
+                padding: 24px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <div class="brand-icon">✓</div>
+                <span>Daily Planner</span>
+            </a>
+            <div class="tab-switcher">
+                <button class="tab-btn active" onclick="switchTab('privacy')">Privacy Policy</button>
+                <button class="tab-btn" onclick="switchTab('terms')">Terms & Conditions</button>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓</button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1 id="hero-title">Privacy Policy</h1>
+        <p id="hero-subtitle">We prioritize your personal privacy with transparent on-device data processing.</p>
+        <div class="badge-bar">
+            <span class="badge">🔒 100% Local On-Device Storage</span>
+            <span class="badge">🛡️ GDPR & CCPA Ready</span>
+            <span class="badge">📅 Last Updated: September 2026</span>
+        </div>
+    </div>
+
+    <!-- Main Body Container -->
+    <div class="main-container">
+        
+        <!-- Sidebar Table of Contents -->
+        <aside class="sidebar">
+            <h4>Quick Navigation</h4>
+            <ul class="sidebar-links" id="privacy-toc">
+                <li><a href="#overview">1. Overview</a></li>
+                <li><a href="#data-collection">2. Data We Collect</a></li>
+                <li><a href="#local-storage">3. Local Storage Policy</a></li>
+                <li><a href="#permissions">4. App Permissions</a></li>
+                <li><a href="#third-party">5. Third-Party Ads (AdMob)</a></li>
+                <li><a href="#data-security">6. Data Security & PIN</a></li>
+                <li><a href="#children">7. Children's Privacy</a></li>
+                <li><a href="#user-rights">8. GDPR & CCPA Rights</a></li>
+                <li><a href="#contact">9. Contact & Support</a></li>
+            </ul>
+            <ul class="sidebar-links" id="terms-toc" style="display: none;">
+                <li><a href="#t-acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#t-license">2. App License & Use</a></li>
+                <li><a href="#t-user-content">3. User Content & Backup</a></li>
+                <li><a href="#t-disclaimer">4. Health & Medical Disclaimer</a></li>
+                <li><a href="#t-financial">5. Financial Tools Disclaimer</a></li>
+                <li><a href="#t-liability">6. Limitation of Liability</a></li>
+                <li><a href="#t-termination">7. Termination</a></li>
+                <li><a href="#t-governing">8. Governing Law</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-card">
+            
+            <!-- PRIVACY POLICY CONTENT -->
+            <div id="privacy-section" class="tab-content active">
+                
+                <h2 id="overview">1. Overview</h2>
+                <p>Welcome to <strong>Daily Planner: Routine & Tasks</strong> ("we", "our", or "the App"). Your privacy is fundamental to our product philosophy. This Privacy Policy describes how we collect, store, handle, and protect your information when you use our mobile application.</p>
+                <div class="callout">
+                    <p><strong>Key Privacy Principle:</strong> All your personal routine schedules, task items, private journal notes, recorded voice memos, expense records, and habit streaks remain stored strictly on your local device. We do not operate remote servers that store or read your personal notes.</p>
+                </div>
+
+                <h2 id="data-collection">2. Information We Collect</h2>
+                <p>We believe in minimal data collection. We categorize information into two types:</p>
+                
+                <h3>A. Personal Content (Stored Locally Only)</h3>
+                <ul>
+                    <li><strong>Tasks & Schedules:</strong> Task titles, categories, priority tags, and time reminder stamps.</li>
+                    <li><strong>Habits & Routines:</strong> Daily habit streak counters and completion history.</li>
+                    <li><strong>Hydration, Sleep & Fitness Logs:</strong> Water glasses consumed, sleep duration hours, and workout calorie entries.</li>
+                    <li><strong>Expense & Budget Data:</strong> Expense amounts, custom categories, monthly balance figures, and budget limits.</li>
+                    <li><strong>Journal & Reflection Memos:</strong> Text reflection notes, mood ratings, and audio voice memos.</li>
+                </ul>
+
+                <h3>B. Non-Personal & Diagnostic Data (Automatically Collected)</h3>
+                <ul>
+                    <li><strong>Device Diagnostics:</strong> Device model, operating system version, screen resolution, and crash stack traces (via Google Play Services).</li>
+                    <li><strong>Ad Performance & Identifiers:</strong> Advertising ID (GAID) used solely by third-party advertising partners (Google AdMob / Meta Audience Network) to serve contextual and personalized ads in compliance with user consent.</li>
+                </ul>
+
+                <h2 id="local-storage">3. Local Storage Policy & Backups</h2>
+                <p>All user-generated records are stored locally using sandboxed on-device database files and preferences. The App offers a <strong>JSON Backup & Restore</strong> feature that allows you to export your data into a readable JSON file. You have full custody and control over where this file is stored or transferred.</p>
+
+                <h2 id="permissions">4. Device Permissions We Request</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Permission</th>
+                                <th>Reason / Usage</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>POST_NOTIFICATIONS</code></td>
+                                <td>Deliver task alarm notifications and daytime hydration reminders.</td>
+                                <td>Optional / User Granted</td>
+                            </tr>
+                            <tr>
+                                <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                                <td>Trigger precise task and routine alarms at exact scheduled minutes.</td>
+                                <td>Optional / User Granted</td>
+                            </tr>
+                            <tr>
+                                <td><code>RECORD_AUDIO</code></td>
+                                <td>Record private audio voice notes inside your personal daily journal. Files are saved locally on your phone storage.</td>
+                                <td>Optional / User Granted</td>
+                            </tr>
+                            <tr>
+                                <td><code>INTERNET</code></td>
+                                <td>Fetch mediation ads (Google AdMob), daily motivational quotes, and in-app update checks.</td>
+                                <td>Standard</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="third-party">5. Third-Party Services & Advertising</h2>
+                <p>To provide this application for free, we display advertisements provided by certified third-party ad networks:</p>
+                <ul>
+                    <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a></li>
+                    <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Services Privacy Policy</a></li>
+                    <li><strong>Meta Audience Network (via AdMob Mediation):</strong> <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+                </ul>
+                <p>These third-party providers may collect anonymized device identifiers and usage metrics to optimize ad delivery according to applicable regulations (GDPR / CCPA).</p>
+
+                <h2 id="data-security">6. Data Security & App Lock (PIN Protection)</h2>
+                <p>We incorporate robust security safeguards into the App:</p>
+                <ul>
+                    <li><strong>App PIN Lock:</strong> You can enable a 4-digit security PIN to protect private journal entries and financial records from unauthorized local access.</li>
+                    <li><strong>Local Sandbox:</strong> Android OS sandboxing prevents other applications from directly reading the App's private database.</li>
+                </ul>
+
+                <h2 id="children">7. Children's Privacy (COPPA Compliance)</h2>
+                <p>Our App is not targeted at children under the age of 13. We do not knowingly collect personal identifiable information from children. If you believe that a child has provided us with personal data, please contact us so we can take immediate action.</p>
+
+                <h2 id="user-rights">8. GDPR (European Union) & CCPA (California) Rights</h2>
+                <p>Users in the European Economic Area (EEA) and California enjoy full statutory privacy rights:</p>
+                <ul>
+                    <li><strong>Right to Access & Portability:</strong> Export all your stored data anytime using the in-app "Backup (JSON)" tool.</li>
+                    <li><strong>Right to Erasure / Deletion:</strong> Clear all data instantly by clearing App storage or uninstalling the App.</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Reset advertising preferences or revoke device permissions anytime in your phone's Android Settings.</li>
+                </ul>
+
+                <h2 id="contact">9. Contact & Inquiries</h2>
+                <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please feel free to reach out to our team:</p>
+                <div class="callout">
+                    <p>📧 <strong>Email Support:</strong> <a href="mailto:rajnee.dubey1987@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 700;">rajnee.dubey1987@gmail.com</a><br>
+                    🏢 <strong>Developer:</strong> Samriva Labs & Developer Team<br>
+                    🌐 <strong>Application:</strong> Daily Planner: Routine & Tasks (Android)</p>
+                </div>
+
+            </div>
+
+            <!-- TERMS & CONDITIONS CONTENT -->
+            <div id="terms-section" class="tab-content">
+                
+                <h2 id="t-acceptance">1. Acceptance of Terms</h2>
+                <p>By downloading, installing, or using <strong>Daily Planner: Routine & Tasks</strong> ("the App"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you should immediately discontinue use and uninstall the App.</p>
+
+                <h2 id="t-license">2. App License & Acceptable Use</h2>
+                <p>We grant you a non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial productivity and scheduling purposes in accordance with these terms.</p>
+                <p><strong>You agree NOT to:</strong></p>
+                <ul>
+                    <li>Reverse-engineer, decompile, or disassemble the application binaries.</li>
+                    <li>Use the application for any illegal, malicious, or abusive activities.</li>
+                    <li>Attempt to circumvent advertising mechanisms, security locks, or intellectual property protections.</li>
+                </ul>
+
+                <h2 id="t-user-content">3. User Content & Data Backup Responsibility</h2>
+                <p>All notes, tasks, expenses, and records created inside the App are owned exclusively by you. Because the App operates on a decentralized, on-device architecture, <strong>you are solely responsible for creating regular backups</strong> of your data using the built-in Export/Backup utility.</p>
+
+                <h2 id="t-disclaimer">4. Health, Fitness & Hydration Disclaimer</h2>
+                <div class="callout">
+                    <p><strong>Not Medical Advice:</strong> The hydration targets, sleep timers, workout calories, and wellness trackers provided in this App are general lifestyle guidance estimates only. They do NOT constitute medical diagnoses, prescriptions, or professional healthcare advice. Always consult a certified medical practitioner before initiating rigorous fitness regimes or altering diet/hydration habits.</p>
+                </div>
+
+                <h2 id="t-financial">5. Financial & Expense Tracking Disclaimer</h2>
+                <p>The expense tracker and budget calculations are provided for personal informational organization only. The App is not a bank, tax advisor, or licensed financial advisory platform.</p>
+
+                <h2 id="t-liability">6. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by applicable law, the developers and publishers of Daily Planner shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages—including but not limited to loss of data, loss of time, schedule missed appointments, or hardware failure resulting from the use or inability to use the App.</p>
+
+                <h2 id="t-termination">7. Modifications & Termination</h2>
+                <p>We reserve the right to modify, update, or discontinue features of the App at any time without prior notice. Continued use of the App following updates constitutes acceptance of the revised Terms.</p>
+
+                <h2 id="t-governing">8. Governing Law & Dispute Resolution</h2>
+                <p>These terms shall be governed by and construed in accordance with the applicable laws of the jurisdiction in which the developer operates, without regard to its conflict of law provisions.</p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <strong>Daily Planner</strong> by Samriva Labs. All rights reserved.</p>
+        <p style="margin-top: 6px; font-size: 0.82rem;">Designed for Google Play Store compliance & maximum user privacy.</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        function switchTab(tab) {
+            const privacySec = document.getElementById('privacy-section');
+            const termsSec = document.getElementById('terms-section');
+            const privacyToc = document.getElementById('privacy-toc');
+            const termsToc = document.getElementById('terms-toc');
+            const heroTitle = document.getElementById('hero-title');
+            const heroSubtitle = document.getElementById('hero-subtitle');
+            const btns = document.querySelectorAll('.tab-btn');
+
+            if (tab === 'privacy') {
+                privacySec.classList.add('active');
+                termsSec.classList.remove('active');
+                privacyToc.style.display = 'flex';
+                termsToc.style.display = 'none';
+                heroTitle.textContent = 'Privacy Policy';
+                heroSubtitle.textContent = 'We prioritize your personal privacy with transparent on-device data processing.';
+                btns[0].classList.add('active');
+                btns[1].classList.remove('active');
+            } else {
+                termsSec.classList.add('active');
+                privacySec.classList.remove('active');
+                termsToc.style.display = 'flex';
+                privacyToc.style.display = 'none';
+                heroTitle.textContent = 'Terms & Conditions';
+                heroSubtitle.textContent = 'Please read these terms and conditions carefully before using our application.';
+                btns[1].classList.add('active');
+                btns[0].classList.remove('active');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleTheme() {
+            const current = document.body.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', next);
+        }
+    </script>
+</body>
+</html>
