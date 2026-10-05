@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Scanner | Samriva Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981;
+            --primary-dark: #059669;
+            --primary-light: #ecfdf5;
+            --primary-glow: rgba(16, 185, 129, 0.15);
+            --bg: #090d16;
+            --surface: #111827;
+            --surface-card: #1a2234;
+            --surface-border: #243048;
+            --text-main: #f3f4f6;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --accent: #38bdf8;
+            --badge-bg: rgba(16, 185, 129, 0.12);
+            --badge-border: rgba(16, 185, 129, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0.95) 0%, rgba(9, 13, 22, 0.8) 100%);
+            border-bottom: 1px solid var(--surface-border);
+            padding: 48px 24px 36px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(16px);
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .brand-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .app-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #10b981 0%, #065f46 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .brand-text h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-text p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn.active {
+            background: var(--primary);
+            color: #064e3b;
+        }
+
+        .nav-btn.secondary {
+            background: var(--surface-card);
+            color: var(--text-muted);
+            border: 1px solid var(--surface-border);
+        }
+
+        .nav-btn.secondary:hover {
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 40px auto 80px;
+            padding: 0 24px;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(56, 189, 248, 0.04) 100%);
+            border: 1px solid var(--badge-border);
+            border-radius: 20px;
+            padding: 28px 32px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hero-left h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .hero-left p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .card {
+            background: var(--surface-card);
+            border: 1px solid var(--surface-border);
+            border-radius: 18px;
+            padding: 32px;
+            margin-bottom: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card h3 .icon {
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: #cbd5e1;
+            font-size: 14.5px;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 4px;
+            top: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.07);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #e2e8f0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid var(--surface-border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--surface);
+            color: #ffffff;
+            padding: 14px 18px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--surface-border);
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #cbd5e1;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .meta-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-border);
+        }
+
+        .meta-label {
+            font-size: 12px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            word-break: break-all;
+        }
+
+        .meta-value a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .meta-value a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            border-top: 1px solid var(--surface-border);
+            padding: 40px 24px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .card {
+                padding: 24px 20px;
+            }
+            .hero-banner {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="brand-box">
+                <div class="app-icon">📄</div>
+                <div class="brand-text">
+                    <h1>Smart Scanner</h1>
+                    <p>By Samriva Labs • Privacy First Scanner</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="privacy_policy.html" class="nav-btn active">Privacy Policy</a>
+                <a href="terms_and_conditions.html" class="nav-btn secondary">Terms & Conditions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Top Banner -->
+        <div class="hero-banner">
+            <div class="hero-left">
+                <h2>Privacy Policy</h2>
+                <p>Effective Date: October 05, 2026 • Version 1.0</p>
+            </div>
+            <div class="badge-pill">
+                <span class="pulse-dot"></span> 100% Offline & Private
+            </div>
+        </div>
+
+        <!-- Section 1: Overview -->
+        <div class="card">
+            <h3><span class="icon">🛡️</span> 1. Core Privacy Promise</h3>
+            <p>
+                At <strong>Samriva Labs</strong>, your privacy is our highest priority. <strong>Smart Scanner</strong> (Package: <code>com.samrivalabs.smartscanner</code>) is engineered as an <strong>offline-first, zero-cloud architecture</strong> document scanner.
+            </p>
+            <div class="highlight-box">
+                <p>🔒 <strong>Zero Cloud Uploads:</strong> Smart Scanner does not require, request, or use the <code>INTERNET</code> permission. Your scanned documents, images, OCR recognized text, metadata, and files NEVER leave your device.</p>
+            </div>
+            <p>
+                We do not operate backend servers that receive your document data, nor do we sell, rent, monetize, or transmit your private content to any third parties or remote AI APIs.
+            </p>
+        </div>
+
+        <!-- Section 2: How Data is Handled -->
+        <div class="card">
+            <h3><span class="icon">⚙️</span> 2. On-Device Processing & Storage</h3>
+            <p>Every feature within Smart Scanner operates strictly locally on your phone hardware:</p>
+            <ul>
+                <li><strong>Document Scanning:</strong> Live camera capture and boundary detection run directly on your device via Android on-device scanner APIs.</li>
+                <li><strong>Offline Optical Character Recognition (OCR):</strong> Text recognition runs locally on your device CPU using on-device ML Kit models without any cloud API requests.</li>
+                <li><strong>Searchable PDF Generation:</strong> Document compilation, page filtering, compression, and searchable PDF generation are compiled 100% locally.</li>
+                <li><strong>Local Database:</strong> Document catalogs, OCR lines, tags, and preferences are stored in an encrypted/app-private SQLite Drift database on your local storage.</li>
+                <li><strong>Local Full-Text Search (FTS5):</strong> Search indexing runs inside your local SQLite engine on-device.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Algorithmic AI & Privacy Redaction -->
+        <div class="card">
+            <h3><span class="icon">🧠</span> 3. Normal Algorithmic AI & Redaction</h3>
+            <p>
+                Smart Scanner includes heuristic intelligence tools (Smart Classifier, Expense Calculator, Smart Namer, Duplicate Finder, and Sensitive Data Redactor):
+            </p>
+            <ul>
+                <li><strong>100% Local Heuristics:</strong> All document classification, vendor name extraction, and date/amount parsing run on local algorithms without internet access.</li>
+                <li><strong>Privacy Redaction:</strong> When detecting sensitive numbers (e.g. Aadhaar, PAN, payment cards, phone numbers, emails), the app applies solid on-device pixel masks before sharing to protect your confidential information.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Device Permissions -->
+        <div class="card">
+            <h3><span class="icon">🔑</span> 4. Device Permissions & Usage</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                            <th>Requirement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Camera</strong> (<code>android.permission.CAMERA</code>)</td>
+                            <td>To capture pages and scan physical documents using the camera.</td>
+                            <td>Required for live camera scanning</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Storage / Photo Picker</strong></td>
+                            <td>To import existing images/PDFs from your gallery or save exported PDFs to your chosen storage location.</td>
+                            <td>Required for file import/export</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Internet</strong> (<code>android.permission.INTERNET</code>)</td>
+                            <td><strong>NOT REQUESTED.</strong> The app has zero internet access capability.</td>
+                            <td>Disabled by design</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 5: Third-Party Libraries & Services -->
+        <div class="card">
+            <h3><span class="icon">📦</span> 5. Third-Party Libraries & Services</h3>
+            <p>
+                Smart Scanner utilizes well-tested, reputable open-source and on-device native libraries:
+            </p>
+            <ul>
+                <li><strong>Google Play Services Document Scanner / ML Kit:</strong> Downloaded/provisioned on-device by Google Play Services for camera scanning & OCR without sending image data to Google servers.</li>
+                <li><strong>SQLite / Drift Engine:</strong> For structured local storage within the app's sandboxed private directory.</li>
+            </ul>
+            <p>
+                If advertising or consent services are enabled in specific store releases, they adhere strictly to Google UMP (User Messaging Platform) compliance for GDPR and US state privacy regulations.
+            </p>
+        </div>
+
+        <!-- Section 6: Data Retention and Deletion -->
+        <div class="card">
+            <h3><span class="icon">🗑️</span> 6. Data Retention & User Control</h3>
+            <ul>
+                <li><strong>Full User Control:</strong> You can delete any individual document, page, tag, or folder at any time.</li>
+                <li><strong>Trash & Permanent Deletion:</strong> Deleted documents go to the local Trash where they can be restored or permanently wiped from device storage.</li>
+                <li><strong>App Uninstall:</strong> Uninstalling Smart Scanner automatically deletes all local app-private database records, scanned files, and cached pages stored in the app directory.</li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Children's Privacy -->
+        <div class="card">
+            <h3><span class="icon">👶</span> 7. Children's Privacy (COPPA Compliance)</h3>
+            <p>
+                Smart Scanner does not knowingly collect, store, or solicit personal information from children under the age of 13. Since no personal data or accounts are created or transmitted to servers, our application is safe for general audiences.
+            </p>
+        </div>
+
+        <!-- Section 8: Changes to This Policy -->
+        <div class="card">
+            <h3><span class="icon">📝</span> 8. Changes to This Privacy Policy</h3>
+            <p>
+                We may update our Privacy Policy periodically to reflect new features or regulatory requirements. Any updates will be published on this page with an updated "Effective Date".
+            </p>
+        </div>
+
+        <!-- Section 9: Contact Information -->
+        <div class="card">
+            <h3><span class="icon">📬</span> 9. Contact Us</h3>
+            <p>
+                If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy, please reach out to us:
+            </p>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <div class="meta-label">Developer / Company</div>
+                    <div class="meta-value">Samriva Labs</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Email Support</div>
+                    <div class="meta-value"><a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Official Website</div>
+                    <div class="meta-value"><a href="https://rajneedubey.github.io" target="_blank" rel="noopener">https://rajneedubey.github.io</a></div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Application</div>
+                    <div class="meta-value">Smart Scanner (Android)</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Samriva Labs. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="privacy_policy.html">Privacy Policy</a> • 
+            <a href="terms_and_conditions.html">Terms & Conditions</a> • 
+            <a href="https://rajneedubey.github.io" target="_blank" rel="noopener">Samriva Labs</a>
+        </p>
+    </footer>
+
+</body>
+</html>
