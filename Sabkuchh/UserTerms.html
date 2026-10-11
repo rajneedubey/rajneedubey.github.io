@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - Sabkuchh | Samriva Labs</title>
+  <meta name="description" content="Terms and Conditions of Service for Sabkuchh Customer App developed by Samriva Labs.">
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-light: #f9fafb;
+      --bg-card: #ffffff;
+      --border-color: #e5e7eb;
+      --badge-bg: #eff6ff;
+      --badge-text: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+
+    .meta-info {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.25rem;
+    }
+
+    .info-box {
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary-color);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .info-box ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-box li {
+      margin-bottom: 0.5rem;
+      font-size: 0.9375rem;
+    }
+
+    .info-box li:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-box strong {
+      color: #0f172a;
+      display: inline-block;
+      min-width: 160px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 2.25rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #f3f4f6;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #374151;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .info-box strong {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="user-terms-and-conditions.html" class="brand-title">
+        <span>Sabkuchh</span>
+      </a>
+      <nav class="nav-links">
+        <a href="user-privacy-policy.html">Privacy Policy</a>
+        <a href="user-terms-and-conditions.html" class="active">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="policy-card">
+      <span class="badge">Terms of Service</span>
+      <h1>Terms and Conditions for Sabkuchh</h1>
+      <div class="meta-info">
+        <strong>Application:</strong> Sabkuchh (Customer App) &bull; 
+        <strong>Package Name:</strong> com.samrivalabs.sabkuch &bull; 
+        <strong>Effective Date:</strong> October 11, 2026 &bull; 
+        <strong>Last Updated:</strong> October 11, 2026
+      </div>
+
+      <div class="info-box">
+        <ul>
+          <li><strong>Developer / Company:</strong> Samriva Labs</li>
+          <li><strong>Official Website:</strong> <a href="https://rajneedubey.github.io" target="_blank" rel="noopener noreferrer">https://rajneedubey.github.io</a></li>
+          <li><strong>Support Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></li>
+          <li><strong>Governing Law:</strong> Laws of India</li>
+        </ul>
+      </div>
+
+      <h2>1. Agreement to Terms</h2>
+      <p>
+        These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User", "you", or "your") and <strong>Samriva Labs</strong> ("Company", "we", "us", or "our"), governing your access to and use of the <strong>Sabkuchh</strong> mobile application (Package ID: <code>com.samrivalabs.sabkuch</code>), website, and all associated services (collectively, the "Platform").
+      </p>
+      <p>
+        By downloading, installing, registering with, accessing, or using the Platform, you acknowledge that you have read, understood, and agreed to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must discontinue using the Platform immediately.
+      </p>
+
+      <h2>2. Eligibility and User Account</h2>
+      <ul>
+        <li><strong>Age Requirement:</strong> You must be at least 18 years of age or the age of majority in your jurisdiction to create an account and place service orders.</li>
+        <li><strong>Account Registration:</strong> To use features of the Platform, you must register using an authentic mobile number verified by One-Time Password (OTP). You agree to provide accurate, current, and complete registration details.</li>
+        <li><strong>Account Security:</strong> You are solely responsible for maintaining the confidentiality of your login credentials and for all activities conducted under your account. You must notify us immediately at <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a> if you suspect any unauthorized access.</li>
+      </ul>
+
+      <h2>3. Nature of Platform &amp; Marketplace Intermediary</h2>
+      <p>
+        <strong>Sabkuchh is a technology marketplace platform.</strong> We connect consumers seeking various on-demand home, maintenance, beauty, and professional services with independent, verified service providers ("Partners" or "Service Providers").
+      </p>
+      <p>
+        Unless explicitly stated otherwise for specific company-certified services, independent Service Providers are independent third-party contractors and are not employees, agents, or joint venturers of Samriva Labs. Samriva Labs facilitates the discovery, booking, scheduling, and payment processing for services but does not directly perform the underlying trades or manual labor.
+      </p>
+
+      <h2>4. Booking, Confirmation, and Service Fulfillment</h2>
+      <ul>
+        <li><strong>Booking Requests:</strong> When you place a service order through the App, your request is matched with available service providers in your vicinity based on service requirements, location, and scheduling availability.</li>
+        <li><strong>Confirmation:</strong> A booking is confirmed when a service partner accepts the request and you receive a confirmation notification via the App or SMS.</li>
+        <li><strong>Access to Premises:</strong> You agree to provide the assigned service partner safe, unobstructed, and timely access to your premises and necessary utilities (e.g., water, electricity) required to perform the service.</li>
+      </ul>
+
+      <h2>5. Pricing, Fees, and Payment Terms</h2>
+      <ul>
+        <li><strong>Transparent Pricing:</strong> Base prices, inspection charges, labor rates, and itemized service fees are displayed in the App prior to booking. Final charges may vary if you request additional repairs or parts during the visit, subject to your prior approval.</li>
+        <li><strong>Payment Methods:</strong> You may pay through secure online options (UPI, debit/credit cards, net banking, supported digital wallets) or Cash on Delivery (COD) where available.</li>
+        <li><strong>Taxes:</strong> All charges are inclusive of applicable taxes (including GST), unless itemized separately during checkout.</li>
+        <li><strong>Surge &amp; Peak Pricing:</strong> During periods of high demand, severe weather, or festival seasons, dynamic surge pricing may apply transparently with prior notice before you confirm your booking.</li>
+      </ul>
+
+      <h2>6. Cancellation, Rescheduling, and Refund Policy</h2>
+      <ul>
+        <li><strong>Free Cancellation Window:</strong> You may cancel or reschedule a booking free of charge up to 2 hours prior to the scheduled appointment slot, or before a partner is dispatched.</li>
+        <li><strong>Late Cancellation Fee:</strong> If a booking is cancelled after a service partner has already arrived at your premises or commenced transit, a nominal visitation/convenience fee may be charged to compensate the partner.</li>
+        <li><strong>Refunds:</strong> If you are charged for a service that was cancelled in accordance with our policy, or where a refund is approved by our support team, refunds are processed within 5–7 business days to your original payment method or instant Sabkuchh in-app wallet.</li>
+      </ul>
+
+      <h2>7. Code of Conduct &amp; Prohibited Activities</h2>
+      <p>You agree not to engage in any of the following prohibited behaviors:</p>
+      <ul>
+        <li>Harassing, threatening, abusing, or behaving disrespectfully toward service partners or support personnel.</li>
+        <li>Soliciting service partners to conduct services offline or circumvent the Sabkuchh platform to evade platform security or payment systems.</li>
+        <li>Providing false or misleading information, addresses, or identity records.</li>
+        <li>Using the Platform for any unlawful, fraudulent, or hazardous purpose.</li>
+        <li>Attempting to reverse engineer, decompile, scrape, or tamper with the App's source code, APIs, or infrastructure.</li>
+      </ul>
+
+      <h2>8. Ratings, Reviews, and User Content</h2>
+      <p>
+        Users are encouraged to provide honest, constructive ratings and reviews regarding their service experience. By submitting reviews, photos, or feedback, you grant Samriva Labs a non-exclusive, royalty-free, worldwide license to use, display, and moderate such content on the Platform to ensure quality and trust. Samriva Labs reserves the right to remove defamatory, abusive, obscene, or fraudulent reviews.
+      </p>
+
+      <h2>9. Intellectual Property Rights</h2>
+      <p>
+        All rights, title, and interest in and to the Sabkuchh App, including logos, trademarks, visual design, user interfaces, algorithms, software code, and brand assets, are the exclusive intellectual property of <strong>Samriva Labs</strong>. You are granted a limited, revocable, non-transferable license to use the App solely for your personal, non-commercial purposes.
+      </p>
+
+      <h2>10. Disclaimers &amp; Limitation of Liability</h2>
+      <ul>
+        <li><strong>"As-Is" Service:</strong> The Platform is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. While we conduct reasonable verification of service providers, we do not warrant that services will always be completely uninterrupted, error-free, or meet every subjective expectation.</li>
+        <li><strong>Limitation of Liability:</strong> To the maximum extent permitted by applicable law, in no event shall Samriva Labs, its directors, employees, or affiliates be liable for any indirect, incidental, punitive, or consequential damages resulting from your use of the Platform or the performance of independent service partners.</li>
+        <li><strong>Maximum Cap:</strong> Our total aggregate liability for any proven claim arising out of these Terms or the services provided shall not exceed the amount actually paid by you for the specific booking in dispute.</li>
+      </ul>
+
+      <h2>11. Indemnification</h2>
+      <p>
+        You agree to defend, indemnify, and hold harmless Samriva Labs, its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including legal fees) arising out of or in any way connected with your breach of these Terms, unlawful conduct, or infringement of any rights of a third party or service partner.
+      </p>
+
+      <h2>12. Termination and Account Suspension</h2>
+      <p>
+        We reserve the right to suspend or terminate your account or access to the Platform at our sole discretion, without prior notice, if you violate any provision of these Terms, engage in fraudulent transactions, or compromise the safety of our service community. You may also terminate your account at any time by requesting deletion in the App settings or emailing us.
+      </p>
+
+      <h2>13. Governing Law and Dispute Resolution</h2>
+      <p>
+        These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or related to these Terms or the Platform shall be resolved amicably through mutual discussion; failing which, such disputes shall be subject to the exclusive jurisdiction of the competent courts in India.
+      </p>
+
+      <h2>14. Modifications to Terms</h2>
+      <p>
+        Samriva Labs reserves the right to modify these Terms at any time. When modifications are made, the "Last Updated" date will be updated. Your continued use of the Platform following such modifications constitutes your acceptance of the revised Terms.
+      </p>
+
+      <h2>15. Contact Information</h2>
+      <p>For any questions, legal notices, or feedback regarding these Terms, please contact:</p>
+      <div class="info-box">
+        <ul>
+          <li><strong>Developer / Company:</strong> Samriva Labs</li>
+          <li><strong>Official Website:</strong> <a href="https://rajneedubey.github.io" target="_blank" rel="noopener noreferrer">https://rajneedubey.github.io</a></li>
+          <li><strong>Support Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Samriva Labs. All rights reserved. &bull; <a href="https://rajneedubey.github.io">rajneedubey.github.io</a></p>
+  </footer>
+
+</body>
+</html>
