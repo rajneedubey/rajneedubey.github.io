@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Sabkuchh Partner | Samriva Labs</title>
+  <meta name="description" content="Privacy Policy for Sabkuchh Partner (Service Provider App) developed by Samriva Labs.">
+  <style>
+    :root {
+      --primary-color: #059669;
+      --primary-dark: #047857;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-light: #f9fafb;
+      --bg-card: #ffffff;
+      --border-color: #e5e7eb;
+      --badge-bg: #ecfdf5;
+      --badge-text: #065f46;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+
+    .meta-info {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.25rem;
+    }
+
+    .info-box {
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary-color);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .info-box ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-box li {
+      margin-bottom: 0.5rem;
+      font-size: 0.9375rem;
+    }
+
+    .info-box li:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-box strong {
+      color: #0f172a;
+      display: inline-block;
+      min-width: 160px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 2.25rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #f3f4f6;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #374151;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9375rem;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+    }
+
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .info-box strong {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="provider-privacy-policy.html" class="brand-title">
+        <span>Sabkuchh Partner</span>
+      </a>
+      <nav class="nav-links">
+        <a href="provider-privacy-policy.html" class="active">Privacy Policy</a>
+        <a href="provider-terms-and-conditions.html">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="policy-card">
+      <span class="badge">Google Play Compliant</span>
+      <h1>Privacy Policy for Sabkuchh Partner</h1>
+      <div class="meta-info">
+        <strong>Application:</strong> Sabkuchh Partner (Service Provider App) &bull; 
+        <strong>Package Name:</strong> com.samrivalabs.sabkuch.provider &bull; 
+        <strong>Effective Date:</strong> October 11, 2026 &bull; 
+        <strong>Last Updated:</strong> October 11, 2026
+      </div>
+
+      <div class="info-box">
+        <ul>
+          <li><strong>Developer / Company:</strong> Samriva Labs</li>
+          <li><strong>Official Website:</strong> <a href="https://rajneedubey.github.io" target="_blank" rel="noopener noreferrer">https://rajneedubey.github.io</a></li>
+          <li><strong>Support Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></li>
+          <li><strong>Target Audience:</strong> Independent Service Professionals &amp; Registered Business Partners</li>
+        </ul>
+      </div>
+
+      <h2>1. Introduction</h2>
+      <p>
+        <strong>Samriva Labs</strong> ("Company", "we", "our", or "us") provides this Privacy Policy to inform service partners, independent contractors, technicians, and service professionals ("Partner", "Provider", or "you") about our policies regarding the collection, use, disclosure, and protection of personal data when using the <strong>Sabkuchh Partner</strong> mobile application (Package ID: <code>com.samrivalabs.sabkuch.provider</code>) and our partner platform (collectively, the "Partner Services").
+      </p>
+      <p>
+        We recognize the vital importance of protecting your personal and professional records. By enrolling, logging in, or using the Sabkuchh Partner App, you agree to the collection and handling of your data in accordance with this Privacy Policy.
+      </p>
+
+      <h2>2. Information We Collect from Service Partners</h2>
+      <p>To enable legitimate job matching, legal compliance, fraud prevention, safety assurance, and timely financial disbursements, we collect the following categories of information:</p>
+
+      <h3>A. Identification, Verification &amp; KYC Documents</h3>
+      <ul>
+        <li><strong>Personal Profile:</strong> Full legal name, date of birth, contact phone number, email address, residential address, emergency contact, and profile photograph.</li>
+        <li><strong>Government Identity Proof (KYC):</strong> Government-issued identity documents such as Aadhaar Card, PAN Card, Voter ID, Driving License, or Passport to verify identity and fulfill legal background check compliance.</li>
+        <li><strong>Trade Certificates &amp; Licenses:</strong> Professional certifications, vocational trade licenses, electrical/plumbing authorizations, or business registration certificates where mandated.</li>
+        <li><strong>Background Verification Records:</strong> Police clearance records, criminal history background checks, and verification records conducted directly or via authorized third-party verification agencies.</li>
+      </ul>
+
+      <h3>B. Financial and Payout Information</h3>
+      <ul>
+        <li><strong>Bank Account Details:</strong> Bank account number, IFSC code, account holder name, or UPI VPA IDs for direct disbursement of service earnings, tips, and incentive payouts.</li>
+        <li><strong>Tax Records:</strong> PAN and GST registration numbers (if applicable) for tax deduction at source (TDS) and regulatory financial reporting.</li>
+      </ul>
+
+      <h3>C. Location Information (Foreground &amp; Background Duty Tracking)</h3>
+      <p>
+        <strong>Sabkuchh Partner collects precise and approximate location data, including while the app is running in the background when your duty status is set to "Online" or when you are en route to an active service job.</strong>
+      </p>
+      <ul>
+        <li><strong>Why Background Location is Needed:</strong>
+          <ol>
+            <li><strong>Nearby Job Dispatch:</strong> To accurately match and offer available customer service requests closest to your live location.</li>
+            <li><strong>Live Transit Tracking &amp; Customer ETA:</strong> To share live arrival estimates and real-time transit updates with the customer awaiting your arrival.</li>
+            <li><strong>Partner Safety &amp; Verification:</strong> To ensure safety during transit, detect abnormal route deviations, and verify genuine physical presence at customer premises for billing transparency.</li>
+          </ol>
+        </li>
+        <li><strong>When Location Tracking Stops:</strong> Location tracking automatically stops whenever you toggle your status to "Offline" in the app or when you log out. We do not track your location during offline hours.</li>
+      </ul>
+
+      <h3>D. Job Execution, Camera, &amp; Photos Data</h3>
+      <ul>
+        <li><strong>Before &amp; After Photos:</strong> Photos or videos taken via the in-app camera showing inspection status, job completion proof, or damaged equipment.</li>
+        <li><strong>In-App Chat &amp; Call Logs:</strong> In-app messaging exchanges, customer communications, and customer feedback.</li>
+      </ul>
+
+      <h2>3. Device Permissions and Why We Request Them</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Type</th>
+              <th>Operational Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>ACCESS_FINE_LOCATION</code> &amp; <code>ACCESS_COARSE_LOCATION</code></td>
+              <td>Location (Foreground)</td>
+              <td>Used while using the app to show your current location on maps, guide you along customer routes, and calculate navigation times.</td>
+            </tr>
+            <tr>
+              <td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+              <td>Background Location</td>
+              <td>Allows the platform to dispatch urgent nearby service requests and provide customers with live real-time arrival tracking while you are marked "Online" or en route.</td>
+            </tr>
+            <tr>
+              <td><code>CAMERA</code></td>
+              <td>Camera</td>
+              <td>Used during onboarding to capture KYC identity documents, and during jobs to capture proof of work (before/after photos) or equipment condition.</td>
+            </tr>
+            <tr>
+              <td><code>READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code></td>
+              <td>Storage</td>
+              <td>Enables you to upload KYC document scans, certificates, and work portfolio photos from device storage.</td>
+            </tr>
+            <tr>
+              <td><code>POST_NOTIFICATIONS</code></td>
+              <td>Push Notifications</td>
+              <td>Critical for real-time alerts about incoming customer bookings, route updates, urgent cancellations, and earnings/payout confirmations.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>4. How We Use Partner Information</h2>
+      <p>We use the data collected for the following operational, commercial, and safety reasons:</p>
+      <ul>
+        <li><strong>Partner Onboarding &amp; KYC:</strong> Verifying identity, background credentials, skill qualification, and regulatory compliance.</li>
+        <li><strong>Intelligent Job Dispatch &amp; Route Optimization:</strong> Matching customer requests to the nearest qualified partner, providing optimized navigation, and calculating fair travel allowances.</li>
+        <li><strong>Financial Settlements:</strong> Calculating service fees, processing bank transfers, tracking weekly/monthly payouts, deducting applicable platform commissions, and issuing tax statements.</li>
+        <li><strong>Performance Metrics &amp; AI Analytics:</strong> Computing acceptance rates, customer review ratings, completion timelines, and demand forecasting to help you maximize your daily earnings.</li>
+        <li><strong>Safety, Fraud Prevention &amp; Quality Control:</strong> Detecting fraudulent GPS spoofing, investigating customer complaints, and safeguarding the physical safety of customers and partners.</li>
+      </ul>
+
+      <h2>5. How We Share Partner Information</h2>
+      <p>
+        <strong>Samriva Labs never sells or leases partner personal data to third-party marketing companies.</strong> We share partner data strictly as necessary for platform operations:
+      </p>
+      <ul>
+        <li><strong>With Customers:</strong> When you accept a booking, we display your full name, profile photo, contact number, overall customer rating, and live location while in transit to enable smooth communication and safety.</li>
+        <li><strong>With Financial &amp; Banking Partners:</strong> Bank account numbers and payment details are securely transmitted to RBI-authorized banking partners and payout gateways to process direct earnings transfers.</li>
+        <li><strong>With KYC &amp; Verification Agencies:</strong> Identity documents are shared with certified verification service providers strictly to perform statutory identity and background checks.</li>
+        <li><strong>Legal &amp; Law Enforcement Authorities:</strong> When required by statutory orders, police notices, or judicial decrees to cooperate with lawful criminal investigations or protect public safety.</li>
+      </ul>
+
+      <h2>6. Security and Protection of KYC &amp; Financial Data</h2>
+      <p>
+        KYC identification records, government identity numbers, and bank account details are classified as confidential and sensitive. They are encrypted in transit using TLS 1.3 encryption and stored with AES-256 encryption at rest. Access to sensitive verification documents is strictly restricted to authorized compliance personnel at Samriva Labs.
+      </p>
+
+      <h2>7. Data Retention and Partner Account Deletion</h2>
+      <p>
+        We retain partner personal and operational data for the duration of your partnership on the Sabkuchh platform. If you wish to discontinue your partnership and delete your account, you have the right to request full account termination:
+      </p>
+      <div class="info-box">
+        <strong>Partner Account &amp; Data Deletion Procedure:</strong>
+        <p style="margin-top: 0.5rem; margin-bottom: 0;">
+          1. Go to <strong>Profile &rarr; Account Settings &rarr; Request Account Deletion</strong> in the Sabkuchh Partner App, OR<br>
+          2. Email our Partner Support Desk at <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a> with the subject <em>"Partner Account Deletion Request - [Your Registered Phone Number]"</em>.<br>
+          Note: Following account closure, any outstanding financial settlements will be processed. Certain financial records, tax invoices, and verification history must be retained for the minimum statutory period mandated by applicable tax and commercial laws in India.
+        </p>
+      </div>
+
+      <h2>8. Partner Rights</h2>
+      <p>As a service partner, you have the right to:</p>
+      <ul>
+        <li>Inspect and update your registered contact details, vehicle information, or bank account.</li>
+        <li>Control your working hours and location tracking simply by turning your duty status to "Offline".</li>
+        <li>Review your detailed earnings history, deductions, and customer reviews at any time.</li>
+      </ul>
+
+      <h2>9. Updates to This Policy</h2>
+      <p>
+        Samriva Labs may modify this Privacy Policy from time to time to accommodate new features, security protocols, or legal mandates. When substantial changes occur, you will receive an alert within the app or via SMS/notification. Continued use of the Sabkuchh Partner App confirms your acceptance of any updated terms.
+      </p>
+
+      <h2>10. Contact Us &amp; Grievance Redressal</h2>
+      <p>For any questions, data queries, or grievance resolution regarding this Partner Privacy Policy, please contact:</p>
+      <div class="info-box">
+        <ul>
+          <li><strong>Developer / Company:</strong> Samriva Labs</li>
+          <li><strong>Partner Grievance Officer:</strong> Rajnee Dubey</li>
+          <li><strong>Support Email:</strong> <a href="mailto:rajnee.dubey1987@gmail.com">rajnee.dubey1987@gmail.com</a></li>
+          <li><strong>Official Website:</strong> <a href="https://rajneedubey.github.io" target="_blank" rel="noopener noreferrer">https://rajneedubey.github.io</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Samriva Labs. All rights reserved. &bull; <a href="https://rajneedubey.github.io">rajneedubey.github.io</a></p>
+  </footer>
+
+</body>
+</html>
